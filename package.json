@@ -1,0 +1,23 @@
+{
+  "name": "digital-worker",
+  "description": "The JS config for the AI digital worker",
+  "version": "0.0.1",
+  "author": "Ding_D <1601202253@qq.com>",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ding-D/digital-worker.git"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "digital worker",
+    "AI"
+  ],
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {}
+}
