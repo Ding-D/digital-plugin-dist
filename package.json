@@ -7,7 +7,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ding-D/digital-worker.git"
+    "url": "https://github.com/Ding-D/digital-worker-dist.git"
   },
   "main": "src/index.js",
   "files": [
