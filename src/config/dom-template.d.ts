@@ -1,0 +1,11 @@
+export declare const a_bot_task_start: (options?: Record<string, any>) => string;
+export declare const a_workflow_task_start: (options?: Record<string, any>) => string;
+export declare const a_bot_task_next: (options?: Record<string, any>) => string;
+export declare const a_bot_turn_to: (options?: Record<string, any>) => string;
+export declare const a_create_subscribe: (options?: Record<string, any>) => string;
+export declare const p_bot_task_placeholder_html: (text: string) => string;
+export declare const box_bot_task_choose: (options?: Record<string, any>) => string;
+export declare const box_bot_task_choose_2: (options?: Record<string, any>) => string;
+export declare const box_bot_turn_to_2: (options?: Record<string, any>) => string;
+export declare const box_bot_turn_and_choose: (options?: Record<string, any>) => string;
+export declare function img_choose_photo_dom(options?: Record<string, any>): string;

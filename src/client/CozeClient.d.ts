@@ -1,0 +1,254 @@
+import type { ApiResponse } from '../types';
+import type { CozeClient } from '../types/CozeClient';
+declare class CozeClient {
+    static ERROR_CODES: {
+        4000: {
+            message: string;
+            solution: string;
+        };
+        4001: {
+            message: string;
+            solution: string;
+        };
+        4002: {
+            message: string;
+            solution: string;
+        };
+        4003: {
+            message: string;
+            solution: string;
+        };
+        4004: {
+            message: string;
+            solution: string;
+        };
+        4005: {
+            message: string;
+            solution: string;
+        };
+        4006: {
+            message: string;
+            solution: string;
+        };
+        4007: {
+            message: string;
+            solution: string;
+        };
+        4008: {
+            message: string;
+            solution: string;
+        };
+        4009: {
+            message: string;
+            solution: string;
+        };
+        4010: {
+            message: string;
+            solution: string;
+        };
+        4011: {
+            message: string;
+            solution: string;
+        };
+        4012: {
+            message: string;
+            solution: string;
+        };
+        4013: {
+            message: string;
+            solution: string;
+        };
+        4014: {
+            message: string;
+            solution: string;
+        };
+        4015: {
+            message: string;
+            solution: string;
+        };
+        4016: {
+            message: string;
+            solution: string;
+        };
+        4019: {
+            message: string;
+            solution: string;
+        };
+        4020: {
+            message: string;
+            solution: string;
+        };
+        4021: {
+            message: string;
+            solution: string;
+        };
+        4022: {
+            message: string;
+            solution: string;
+        };
+        4100: {
+            message: string;
+            solution: string;
+        };
+        4101: {
+            message: string;
+            solution: string;
+        };
+        4102: {
+            message: string;
+            solution: string;
+        };
+        4104: {
+            message: string;
+            solution: string;
+        };
+        4105: {
+            message: string;
+            solution: string;
+        };
+        4200: {
+            message: string;
+            solution: string;
+        };
+        4300: {
+            message: string;
+            solution: string;
+        };
+        4301: {
+            message: string;
+            solution: string;
+        };
+        4302: {
+            message: string;
+            solution: string;
+        };
+        4303: {
+            message: string;
+            solution: string;
+        };
+        4304: {
+            message: string;
+            solution: string;
+        };
+        4314: {
+            message: string;
+            solution: string;
+        };
+        4315: {
+            message: string;
+            solution: string;
+        };
+        5000: {
+            message: string;
+            solution: string;
+        };
+    };
+    static stream_state: CozeClient.StreamState;
+    static empty_response: ApiResponse;
+    static empty_promise: () => Promise<ApiResponse<any>>;
+    platform: CozeClient.Platform;
+    request: CozeClient.RequestConfig;
+    requestHandleMap: {
+        postConsume: (p: any) => any;
+        getToken: (p: any) => any;
+    };
+    requestClient: CozeClient.RequestClient;
+    urlType: string;
+    urlConfig: {
+        bot: {
+            chat: string;
+            conversation: {
+                create: string;
+            };
+        };
+        workflow: {
+            run: string;
+            stream_run: string;
+        };
+    };
+    urlConfigHandleMap: {
+        bot: {
+            chat: (url: string) => string;
+            conversation: {
+                create: (url: string) => string;
+            };
+        };
+        workflow: {
+            run: (url: string) => string;
+            stream_run: (url: string) => string;
+        };
+    };
+    streamUrlTypeMap: Record<string, boolean>;
+    cozeToken: string;
+    conversation_id: string;
+    tokenLoading: boolean;
+    is_consume: boolean;
+    consume_id: number;
+    consume_loading: boolean;
+    static consume_map: {
+        '-1': number;
+        '9': number;
+        '10': number;
+        '11': number;
+    };
+    constructor(options: CozeClient.InitOptions);
+    init(options: CozeClient.InitOptions): void;
+    init_request(request: CozeClient.RequestConfig): void;
+    init_url_config(urlConfig: Partial<CozeClient.UrlConfig>): void;
+    init_url_type(urlType: CozeClient.UrlType): void;
+    init_consume(options: CozeClient.ConsumeOptions): void;
+    init_client_options(options: CozeClient.ClientOptions): void;
+    get_url(): string;
+    sendMessage(options: CozeClient.SendMessageOptions): any;
+    startRequest(url: string, options: CozeClient.StartRequestOptions): any;
+    requestByWeb(options: CozeClient.RequestOptions): Promise<void>;
+    requestByUniapp(options: CozeClient.RequestOptions): any;
+    handleResponse(): ((decode: string, callback: CozeClient.Callback) => Promise<void>) | ((response: CozeClient.UniResponse, callback: CozeClient.Callback) => Promise<void>) | null;
+    handleBotResponse(decode: string, callback: CozeClient.Callback): Promise<void>;
+    handleWorkflowRunResponse(response: CozeClient.UniResponse, callback: CozeClient.Callback): Promise<void>;
+    handleMPWorkflowRunStreamResponse(decode: string, callback: CozeClient.Callback): Promise<void>;
+    botCallback(state: CozeClient.StreamState, decode: string, callback: CozeClient.Callback): Promise<void>;
+    workflowStreamCallback(state: CozeClient.StreamState, decode: string, callback: CozeClient.Callback): Promise<void>;
+    check_workflow_is_success(response: CozeClient.UniResponse): boolean;
+    get_errorinfo(error: any): {
+        code: number;
+        message: string;
+        solution: string;
+        details: any;
+    };
+    split_decode(decode: string): string[];
+    /**
+     * 事件类型检查
+     * */
+    get_part_type(part: string): string;
+    get_part_data(part: string): any;
+    chcek_is_stream_url(): boolean;
+    set_token(token: string): void;
+    get_content_filelist(fileList: CozeClient.ObjectString[]): {
+        content_type: string;
+        content: string;
+    };
+    handle_request_body(body: CozeClient.ResquestBody): CozeClient.ResquestBody;
+    handle_custom_variables(custom_variables: string): any;
+    split_body_extra(extra: Record<string, any>): {
+        [x: string]: any;
+    };
+    simulate_bot_reply(callback: CozeClient.Callback, origin_message: CozeClient.CallbackData, options: {
+        reasoning_content_random?: number;
+        content_radom?: number;
+    }): Promise<unknown>;
+    get_consume_num(consume_id?: number): number;
+    get_stream_state(): CozeClient.StreamState;
+    consumeIntegral(handleConsumeEnd: (data: number) => void): Promise<void>;
+    getToken(callback: ((data: string | null) => void) | null): void;
+    getTokenSync(): Promise<string | null>;
+    createConversation(options: {
+        header: any;
+        data: any;
+    }, callback: (data: string | null) => void): void;
+    createConversationAsync(options: {
+        header: any;
+        data: any;
+    }, callback: (data: string | null) => void): Promise<void>;
+}
+export default CozeClient;
