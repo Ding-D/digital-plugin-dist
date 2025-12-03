@@ -1,5 +1,5 @@
 import type { TaskTemplate, DomItem } from '../types';
-declare class AI_Task {
+declare class TaskClient {
     static task_status_map: {
         '-1': string;
         '0': string;
@@ -186,7 +186,7 @@ declare class AI_Task {
     };
     static get_dom_value(origin_dom: DomItem): any;
     static get_dom_format_value(origin_dom: DomItem): any;
-    static get_new_default_dom(key: string, n_dom: Record<string, any>, sub_key?: string): typeof AI_Task | {
+    static get_new_default_dom(key: string, n_dom: Record<string, any>, sub_key?: string): typeof TaskClient | {
         title: string;
         info: string;
         value: string;
@@ -260,4 +260,4 @@ declare class AI_Task {
     add_next(task_option: TaskTemplate): this;
     get_next(last_task_key: string): TaskTemplate | null;
 }
-export default AI_Task;
+export default TaskClient;

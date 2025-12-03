@@ -229,7 +229,7 @@ declare class CozeClient {
         content: string;
     };
     handle_request_body(body: CozeClient.ResquestBody): CozeClient.ResquestBody;
-    handle_custom_variables(custom_variables: string): any;
+    handle_custom_variables(custom_variables: Record<string, any>): Record<string, any>;
     split_body_extra(extra: Record<string, any>): {
         [x: string]: any;
     };
@@ -238,7 +238,7 @@ declare class CozeClient {
         content_radom?: number;
     }): Promise<unknown>;
     get_consume_num(consume_id?: number): number;
-    get_stream_state(): CozeClient.StreamState;
+    static get_stream_state(): CozeClient.StreamState;
     consumeIntegral(handleConsumeEnd: (data: number) => void): Promise<void>;
     getToken(callback: ((data: string | null) => void) | null): void;
     getTokenSync(): Promise<string | null>;

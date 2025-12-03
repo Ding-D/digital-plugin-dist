@@ -18,8 +18,8 @@ export default class ActionClient {
         handleOptions?: (linkEvent: any) => any;
     }>;
     constructor();
-    checkIsActionKey(key: string): boolean;
-    checkIsActionValue(value: string): boolean;
-    getTargetAction(key: string | undefined, val: string): any;
+    static checkIsActionKey(key: string): boolean;
+    static checkIsActionValue(value: string): boolean;
+    static getTargetAction(key: string | undefined, val: string): any;
     runAction(linkEvent: any): void;
 }

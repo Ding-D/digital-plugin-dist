@@ -110,8 +110,6 @@ export interface ActionConfigExtended extends ActionConfig {
 }
 declare global {
     const uni: any;
-    const actions: Record<string, ActionConfigExtended>;
-    const ACTION_KEY: string;
 }
 export interface CozeUtil {
     return_additional_messages: (input: string, fileList?: CozeFile[]) => CozeMessage[];
