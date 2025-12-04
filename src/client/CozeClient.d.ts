@@ -153,8 +153,11 @@ declare class CozeClient {
         getToken: (p: any) => any;
     };
     requestClient: CozeClient.RequestClient;
+    appid: string;
+    secret_key: string;
     urlType: string;
     urlConfig: {
+        token: string;
         bot: {
             chat: string;
             conversation: {
@@ -167,6 +170,7 @@ declare class CozeClient {
         };
     };
     urlConfigHandleMap: {
+        token: (url: string) => string;
         bot: {
             chat: (url: string) => string;
             conversation: {
@@ -179,12 +183,13 @@ declare class CozeClient {
         };
     };
     streamUrlTypeMap: Record<string, boolean>;
-    cozeToken: string;
+    token: string;
     conversation_id: string;
     tokenLoading: boolean;
     is_consume: boolean;
     consume_id: number;
     consume_loading: boolean;
+    private streamBuffer;
     static consume_map: {
         '-1': number;
         '9': number;
@@ -201,13 +206,17 @@ declare class CozeClient {
     get_url(): string;
     sendMessage(options: CozeClient.SendMessageOptions): any;
     startRequest(url: string, options: CozeClient.StartRequestOptions): any;
-    requestByWeb(options: CozeClient.RequestOptions): Promise<void>;
-    requestByUniapp(options: CozeClient.RequestOptions): any;
-    handleResponse(): ((decode: string, callback: CozeClient.Callback) => Promise<void>) | ((response: CozeClient.UniResponse, callback: CozeClient.Callback) => Promise<void>) | null;
-    handleBotResponse(decode: string, callback: CozeClient.Callback): Promise<void>;
-    handleWorkflowRunResponse(response: CozeClient.UniResponse, callback: CozeClient.Callback): Promise<void>;
+    requestByWeb(options: CozeClient.RequestOptions): Promise<Response>;
+    requestByMP(options: CozeClient.RequestOptions): any;
+    handleWebResponse(): ((reader: ReadableStreamDefaultReader<Uint8Array<ArrayBuffer>>, decoder: TextDecoder, callback: CozeClient.Callback) => Promise<void>) | ((response: CozeClient.UniResponse, callback: CozeClient.Callback) => Promise<void>) | null;
+    handleMPResponse(): ((response: CozeClient.UniResponse, callback: CozeClient.Callback) => Promise<void>) | ((decode: string, callback: CozeClient.Callback) => Promise<void>) | null;
+    handleWebBotResponse(reader: ReadableStreamDefaultReader<Uint8Array<ArrayBuffer>>, decoder: TextDecoder, callback: CozeClient.Callback): Promise<void>;
+    handleWebWorkflowRunStream(reader: ReadableStreamDefaultReader<Uint8Array<ArrayBuffer>>, decoder: TextDecoder, callback: CozeClient.Callback): Promise<void>;
+    handleMPBotResponse(decode: string, callback: CozeClient.Callback): Promise<void>;
     handleMPWorkflowRunStreamResponse(decode: string, callback: CozeClient.Callback): Promise<void>;
-    botCallback(state: CozeClient.StreamState, decode: string, callback: CozeClient.Callback): Promise<void>;
+    handleWorkflowRunResponse(response: CozeClient.UniResponse, callback: CozeClient.Callback): Promise<void>;
+    botMPCallback(state: CozeClient.StreamState, decode: string, callback: CozeClient.Callback): Promise<void>;
+    botWebCallback(state: CozeClient.StreamState, parts: string[], callback: CozeClient.Callback): Promise<void>;
     workflowStreamCallback(state: CozeClient.StreamState, decode: string, callback: CozeClient.Callback): Promise<void>;
     check_workflow_is_success(response: CozeClient.UniResponse): boolean;
     get_errorinfo(error: any): {
@@ -240,15 +249,10 @@ declare class CozeClient {
     get_consume_num(consume_id?: number): number;
     static get_stream_state(): CozeClient.StreamState;
     consumeIntegral(handleConsumeEnd: (data: number) => void): Promise<void>;
-    getToken(callback: ((data: string | null) => void) | null): void;
-    getTokenSync(): Promise<string | null>;
+    getToken(): Promise<unknown>;
     createConversation(options: {
         header: any;
         data: any;
-    }, callback: (data: string | null) => void): void;
-    createConversationAsync(options: {
-        header: any;
-        data: any;
-    }, callback: (data: string | null) => void): Promise<void>;
+    }): Promise<unknown>;
 }
 export default CozeClient;

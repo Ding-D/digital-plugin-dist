@@ -1,1 +1,371 @@
-const a2_0x1214eb=a2_0x327c;function a2_0x327c(_0xbfd0b3,_0x13ba47){const _0x47e4d8=a2_0x47e4();return a2_0x327c=function(_0x327c17,_0x78db35){_0x327c17=_0x327c17-0x12a;let _0x78139b=_0x47e4d8[_0x327c17];return _0x78139b;},a2_0x327c(_0xbfd0b3,_0x13ba47);}(function(_0x56f773,_0x5b0df7){const _0x21910c=a2_0x327c,_0x4e90b6=_0x56f773();while(!![]){try{const _0x1eacfa=parseInt(_0x21910c(0x136))/0x1+parseInt(_0x21910c(0x12c))/0x2+-parseInt(_0x21910c(0x13a))/0x3+-parseInt(_0x21910c(0x15c))/0x4*(parseInt(_0x21910c(0x14a))/0x5)+parseInt(_0x21910c(0x131))/0x6*(-parseInt(_0x21910c(0x168))/0x7)+-parseInt(_0x21910c(0x14f))/0x8*(-parseInt(_0x21910c(0x16a))/0x9)+parseInt(_0x21910c(0x166))/0xa*(parseInt(_0x21910c(0x142))/0xb);if(_0x1eacfa===_0x5b0df7)break;else _0x4e90b6['push'](_0x4e90b6['shift']());}catch(_0x3e039d){_0x4e90b6['push'](_0x4e90b6['shift']());}}}(a2_0x47e4,0x1d0d4));function a2_0x47e4(){const _0x30734e=['next_task','315762mBXaKn','value','floor','add_next','待开始','774FRhKpc','<a\x20','未开始','push','get_last_task_list_item','137660ngZzHz','choose_message','keys','get_new_task','647217SOQBzI','get_new_default_dom','请输入','random','textarea','map','deepClone','length','11UvtWvg','label','findIndex','entries','<p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a>任务1</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<br/>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a>任务2</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</p>','请选择聊天内容','dom_map','请选择图片','5oufWgS','get_task_list_index','get_next','edit_task_list_item','title','86152yYodCb','add_task_list_item','select','forEach','选择订阅','key','task_template','includes','get_dom_format_value','creat_task_list','请选择','ACTION_KEY','=\x27run_bot_next_task\x27\x20data-next_task_key=\x27next_task_key\x27>继续</a>','397572WtZGoF','get_task','select_human','get_task_list_item','voice','选择形象','random_update_dom_value','text','isEmpty','get_last_task_list_idx','1732510RWKJQl','get_next_task','8309rYBCax','select_task','99czwvLt','options','待完成','value_list','task_list','set_next_task','single','type','author','default','isArray','join','select_voice','need_random_value'];a2_0x47e4=function(){return _0x30734e;};return a2_0x47e4();}import a2_0x1a4671 from'../utils';import a2_0x2a2c4a from'./ActionClient';import{img_choose_photo_dom,p_bot_task_placeholder_html}from'../config/dom-template';class TaskClient{constructor(_0x148b64={}){const _0x21ed79=a2_0x327c;this[_0x21ed79(0x16e)]=[];const {task_list:task_list=[]}=_0x148b64;this['task_list']=task_list;}static['get_task_status_map'](){const _0x569402=a2_0x327c;return a2_0x1a4671[_0x569402(0x140)](this['task_status_map']);}static['get_dom_value'](_0x31d3e2){const _0x5a6fc8=a2_0x327c;if(!_0x31d3e2)return'';const _0x37eb9b={'default':_0x4455b5=>_0x4455b5[_0x5a6fc8(0x12d)],'input':_0x53277e=>_0x53277e[_0x5a6fc8(0x12d)],'textarea':_0x2f4e27=>_0x2f4e27[_0x5a6fc8(0x12d)],'select':_0x3c3ffa=>!a2_0x1a4671['isEmpty'](_0x3c3ffa[_0x5a6fc8(0x12d)])&&Array[_0x5a6fc8(0x174)](_0x3c3ffa[_0x5a6fc8(0x12d)])?_0x3c3ffa[_0x5a6fc8(0x12d)][_0x5a6fc8(0x175)]?.(',')||'':_0x3c3ffa['value'],'select_human':_0x3c1ecc=>_0x3c1ecc['value']?_0x3c1ecc[_0x5a6fc8(0x12d)]['id']||'':'','select_voice':_0x1abc8e=>_0x1abc8e[_0x5a6fc8(0x12d)]?_0x1abc8e[_0x5a6fc8(0x12d)][_0x5a6fc8(0x160)]||'':'','select_subscribe':_0x103d94=>_0x103d94[_0x5a6fc8(0x12d)]?_0x103d94['value']['id']||'':'','picker_view':_0xc40cf3=>!a2_0x1a4671[_0x5a6fc8(0x164)](_0xc40cf3[_0x5a6fc8(0x12d)])&&Array[_0x5a6fc8(0x174)](_0xc40cf3['value'])?_0xc40cf3[_0x5a6fc8(0x12d)][_0x5a6fc8(0x141)]>0x1?_0xc40cf3[_0x5a6fc8(0x12d)][_0x5a6fc8(0x13f)]((_0x1bfdc1,_0x456ecd)=>_0xc40cf3['options'][_0x456ecd][_0x1bfdc1][_0x5a6fc8(0x12d)])[_0x5a6fc8(0x175)]('，'):_0xc40cf3[_0x5a6fc8(0x12d)]['map'](_0x126a4f=>_0xc40cf3[_0x5a6fc8(0x16b)][_0x126a4f][_0x5a6fc8(0x12d)])['join']('，'):_0xc40cf3['value']},_0x464a73=(_0x37eb9b[_0x31d3e2[_0x5a6fc8(0x171)]]||_0x37eb9b[_0x5a6fc8(0x173)])(_0x31d3e2);return _0x464a73;}static[a2_0x1214eb(0x157)](_0x4313c9){const _0x5916e2=a2_0x1214eb;if(!_0x4313c9)return'';const _0x23fcdc={'default':_0x35affd=>_0x35affd['value'],'input':_0x50ce52=>_0x50ce52[_0x5916e2(0x12d)],'textarea':_0x4dfe14=>_0x4dfe14['value'],'select':_0x38cf25=>_0x38cf25['options']?.['find'](_0x3a75c0=>_0x3a75c0[_0x5916e2(0x12d)]==_0x38cf25['value'])?.[_0x5916e2(0x143)],'select_human':_0x29f094=>_0x29f094['value']?_0x29f094[_0x5916e2(0x12d)][_0x5916e2(0x14e)]||'':'','select_voice':_0x450cd7=>_0x450cd7['value']?_0x450cd7['value'][_0x5916e2(0x14e)]||'':'','select_subscribe':_0x204ab2=>_0x204ab2[_0x5916e2(0x12d)]?_0x204ab2[_0x5916e2(0x12d)][_0x5916e2(0x172)]||'':'','picker_view':_0x3f9737=>!a2_0x1a4671[_0x5916e2(0x164)](_0x3f9737[_0x5916e2(0x12d)])&&Array[_0x5916e2(0x174)](_0x3f9737['value'])?_0x3f9737[_0x5916e2(0x12d)][_0x5916e2(0x141)]>0x1?_0x3f9737[_0x5916e2(0x12d)]['map']((_0x3e2f12,_0x32f08e)=>_0x3f9737['options'][_0x32f08e][_0x3e2f12][_0x5916e2(0x143)])[_0x5916e2(0x175)]('，'):_0x3f9737['value'][_0x5916e2(0x13f)](_0x3a6fe4=>_0x3f9737[_0x5916e2(0x16b)][_0x3a6fe4][_0x5916e2(0x143)])[_0x5916e2(0x175)]('，'):'','choose_photo':_0x4d9b18=>!a2_0x1a4671[_0x5916e2(0x164)](_0x4d9b18[_0x5916e2(0x12d)])&&Array[_0x5916e2(0x174)](_0x4d9b18[_0x5916e2(0x12d)])?_0x4d9b18[_0x5916e2(0x12d)]['length']>0x0?_0x4d9b18[_0x5916e2(0x12d)][_0x5916e2(0x13f)]((_0x15be8c,_0xbfa002)=>img_choose_photo_dom({'src':_0x15be8c}))[_0x5916e2(0x175)]('\x0a\x0a'):'':img_choose_photo_dom({'src':_0x4d9b18[_0x5916e2(0x12d)]})};return(_0x23fcdc[_0x4313c9[_0x5916e2(0x171)]]||_0x23fcdc[_0x5916e2(0x173)])(_0x4313c9);}static[a2_0x1214eb(0x13b)](_0x32ce02,_0x2c9e23,_0x1b0f8e=a2_0x1214eb(0x173)){const _0x341a0e=a2_0x1214eb;if(!_0x2c9e23)return this;const _0x43c736=Object[_0x341a0e(0x145)](_0x2c9e23);if(!_0x43c736[_0x341a0e(0x141)])return this;const _0x311ee7=TaskClient[_0x341a0e(0x148)][_0x32ce02]?.[_0x1b0f8e];if(!_0x311ee7)return this;const _0x3a2d75=a2_0x1a4671['deepClone'](_0x311ee7);return _0x43c736['forEach'](([_0xf103a,_0xeecf5d])=>{const _0x1c35c7=_0x341a0e;if(Object[_0x1c35c7(0x138)](_0x3a2d75)[_0x1c35c7(0x156)](_0xf103a))_0x3a2d75[_0xf103a]=_0xeecf5d;}),_0x3a2d75;}[a2_0x1214eb(0x162)](_0x4c40da){const _0x8d4346=a2_0x1214eb;if(_0x4c40da[_0x8d4346(0x12a)]===![])return _0x4c40da;const _0x39251d=_0x4c40da[_0x8d4346(0x16d)]||[];if(!_0x39251d[_0x8d4346(0x141)])return _0x4c40da;return _0x4c40da[_0x8d4346(0x12d)]=_0x39251d[Math[_0x8d4346(0x12e)](Math[_0x8d4346(0x13d)]()*_0x39251d[_0x8d4346(0x141)])],_0x4c40da;}['random_update_dom_list'](_0x26532c){return _0x26532c['forEach'](_0x25f59b=>{this['random_update_dom_value'](_0x25f59b);}),_0x26532c;}[a2_0x1214eb(0x15d)](_0x2dd9e8){return this[_0x2dd9e8];}['get_new_task'](){const _0xe4ebd9=a2_0x1214eb,_0x329876=a2_0x1a4671[_0xe4ebd9(0x140)](TaskClient[_0xe4ebd9(0x155)]);return _0x329876;}[a2_0x1214eb(0x16f)](_0x3ce75c,_0x3fd471,_0x20bf1c){const _0x4e17fd=a2_0x1214eb;if(_0x3ce75c)_0x3ce75c[_0x4e17fd(0x12b)]=_0x20bf1c;else{const _0x567e72=this[_0x4e17fd(0x15f)](_0x3fd471);_0x567e72&&(_0x567e72[_0x4e17fd(0x12b)]=_0x20bf1c);}}[a2_0x1214eb(0x167)](_0x1e936b,_0x487b18){const _0x520f64=a2_0x1214eb,_0x4491f1=_0x1e936b||this[_0x520f64(0x15f)](_0x487b18);if(!_0x4491f1||!_0x4491f1[_0x520f64(0x12b)])return null;return this[_0x520f64(0x15f)](_0x4491f1[_0x520f64(0x12b)])||null;}['get_task_list'](){const _0x57893f=a2_0x1214eb;return this[_0x57893f(0x16e)];}[a2_0x1214eb(0x158)](_0x55b60f){const _0x188bfd=a2_0x1214eb;this[_0x188bfd(0x16e)]=[];if(_0x55b60f)this[_0x188bfd(0x150)]();return this;}[a2_0x1214eb(0x150)](){const _0x224ad6=a2_0x1214eb,_0x55fcbb=this[_0x224ad6(0x139)]();if(_0x55fcbb)this[_0x224ad6(0x16e)][_0x224ad6(0x134)](_0x55fcbb);return this;}[a2_0x1214eb(0x15f)](_0x590587){const _0x256c1a=a2_0x1214eb;return this[_0x256c1a(0x16e)]['find'](_0x917312=>_0x917312[_0x256c1a(0x154)]===_0x590587)||null;}[a2_0x1214eb(0x14b)](_0x1d2b0b){const _0x17e8fb=a2_0x1214eb;return this['task_list'][_0x17e8fb(0x144)](_0x29d511=>_0x29d511[_0x17e8fb(0x154)]===_0x1d2b0b);}['get_last_task_list_idx'](){const _0x2342c9=this['task_list']['length'];return _0x2342c9-0x1;}[a2_0x1214eb(0x135)](){const _0x4cfef7=a2_0x1214eb;return this[_0x4cfef7(0x16e)][this[_0x4cfef7(0x165)]()]||null;}['set_task_list_item'](_0xe0d207,_0x2e930f,_0x376942){this['task_list'][_0xe0d207][_0x2e930f]=_0x376942;}[a2_0x1214eb(0x14d)](_0x1d4153,_0x24c261){const _0x4827fe=a2_0x1214eb;if(_0x1d4153===undefined||_0x1d4153===null||_0x1d4153<0x0)return this;if(!_0x24c261)return this;const _0x9f26c4=Object[_0x4827fe(0x145)](_0x24c261);if(!_0x9f26c4[_0x4827fe(0x141)])return this;const _0x267a50=this[_0x4827fe(0x16e)][_0x1d4153]||null;if(!_0x267a50)return this;return _0x9f26c4[_0x4827fe(0x152)](([_0x570f15,_0x40dca4])=>{const _0x429fa8=_0x4827fe;if(Object[_0x429fa8(0x138)](_0x267a50)['includes'](_0x570f15))this['set_task_list_item'](_0x1d4153,_0x570f15,_0x40dca4);}),this;}[a2_0x1214eb(0x12f)](_0x4142a7){const _0x13972e=a2_0x1214eb;if(this['get_last_task_list_idx']()>-0x1)this[_0x13972e(0x14d)](this[_0x13972e(0x165)](),{'next_task':_0x4142a7['key']});this[_0x13972e(0x150)]();if(_0x4142a7)this[_0x13972e(0x14d)](this['get_last_task_list_idx'](),_0x4142a7);return this;}[a2_0x1214eb(0x14c)](_0x44a621){const _0x479ff4=a2_0x1214eb,_0x31945b=this[_0x479ff4(0x15f)](_0x44a621);if(!_0x31945b||!_0x31945b[_0x479ff4(0x12b)])return null;const _0x51f749=this[_0x479ff4(0x15f)](_0x31945b[_0x479ff4(0x12b)]);return _0x51f749;}}TaskClient['task_status_map']={'-1':a2_0x1214eb(0x133),'0':a2_0x1214eb(0x130),'1':'进行中','2':a2_0x1214eb(0x16c),'3':'已完成'},TaskClient[a2_0x1214eb(0x155)]={'name':'任务名称','key':'','task_status':'0','dom_list':[],'ai_config':{'message_list':[]},'show_next_btn':!![],'next_btn':a2_0x1214eb(0x132)+a2_0x2a2c4a[a2_0x1214eb(0x15a)]+a2_0x1214eb(0x15b),'next_task_key':''},TaskClient[a2_0x1214eb(0x148)]={'text':{'default':{'title':'标题','info':'','value':'','required':![],'show_title_bar':!![],'show_title':!![],'need_random_value':![],'is_need_edit':![]}},'textarea':{'default':{'type':a2_0x1214eb(0x13e),'input_type':a2_0x1214eb(0x163),'info':'','name':'','title':'标题','value':'','placeholder':a2_0x1214eb(0x13c),'placeholder_html':p_bot_task_placeholder_html('请输入'),'value_list':[],'maxlength':0x1f4,'required':![],'show_title_bar':!![],'show_title':!![],'need_random_value':!![],'is_need_edit':!![]}},'select':{'default':{'title':'标题','type':a2_0x1214eb(0x151),'info':'','select_type':a2_0x1214eb(0x170),'name':'','options':[],'value':null,'value_list':[],'placeholder':'请选择','placeholder_html':p_bot_task_placeholder_html('请选择'),'required':![],'show_title_bar':!![],'show_title':!![],'need_random_value':!![],'is_need_edit':!![]},'select_human':{'title':a2_0x1214eb(0x161),'type':a2_0x1214eb(0x15e),'name':'','value':null,'placeholder':'请选择','placeholder_html':p_bot_task_placeholder_html('请选择'),'required':![],'show_title_bar':!![],'show_title':!![],'is_need_edit':!![]},'select_voice':{'title':'选择声音','type':a2_0x1214eb(0x176),'name':'','value':null,'placeholder':a2_0x1214eb(0x159),'placeholder_html':p_bot_task_placeholder_html('请选择'),'required':![],'show_title_bar':!![],'show_title':!![],'is_need_edit':!![]},'select_subscribe':{'title':a2_0x1214eb(0x153),'type':'select_subscribe','name':'','value':null,'placeholder':a2_0x1214eb(0x159),'placeholder_html':p_bot_task_placeholder_html('请选择'),'required':![],'show_title_bar':!![],'show_title':!![],'is_need_edit':!![]},'select_task':{'title':'标题','type':a2_0x1214eb(0x169),'info':'','name':'','options':[],'value':null,'placeholder':'请选择工作指令','placeholder_html':p_bot_task_placeholder_html('请选择工作指令'),'html':a2_0x1214eb(0x146),'required':![],'show_title_bar':!![],'show_title':!![],'need_random_value':![],'is_need_edit':![]}},'picker_view':{'default':{'title':'标题','type':'picker_view','info':'','name':'','options':[],'value':null,'value_list':[],'placeholder':a2_0x1214eb(0x159),'placeholder_html':p_bot_task_placeholder_html('请选择'),'required':![],'show_title_bar':!![],'show_title':!![],'need_random_value':!![],'is_need_edit':!![]}},'choose_message':{'default':{'title':'标题','type':a2_0x1214eb(0x137),'info':'','name':'','value':null,'placeholder':a2_0x1214eb(0x147),'placeholder_html':p_bot_task_placeholder_html(a2_0x1214eb(0x147)),'required':![],'show_title_bar':!![],'show_title':!![],'need_random_value':![],'is_need_edit':!![]}},'choose_photo':{'default':{'title':'标题','type':'choose_photo','info':'','name':'','value':null,'placeholder':a2_0x1214eb(0x149),'placeholder_html':p_bot_task_placeholder_html(a2_0x1214eb(0x149)),'required':![],'show_title_bar':!![],'show_title':!![],'need_random_value':![],'is_need_edit':!![]}}};export default TaskClient;
+import util from '../utils';
+import ActionClient from './ActionClient';
+import { img_choose_photo_dom, p_bot_task_placeholder_html } from '../config/dom-template';
+class TaskClient {
+    constructor(options = {}) {
+        this.task_list = [];
+        const { task_list = [] } = options;
+        this.task_list = task_list;
+    }
+    static get_task_status_map() {
+        return util.deepClone(this.task_status_map);
+    }
+    // 获取当前dom的value值
+    static get_dom_value(origin_dom) {
+        if (!origin_dom)
+            return '';
+        const formatMap = {
+            default: dom => dom.value,
+            input: dom => dom.value,
+            textarea: dom => dom.value,
+            select: dom => !util.isEmpty(dom.value) && Array.isArray(dom.value)
+                ? dom.value.join?.(',') || ''
+                : dom.value,
+            select_human: dom => (dom.value ? dom.value.id || '' : ''),
+            select_voice: dom => (dom.value ? dom.value.voice || '' : ''),
+            select_subscribe: dom => (dom.value ? dom.value.id || '' : ''),
+            picker_view: dom => !util.isEmpty(dom.value) && Array.isArray(dom.value)
+                ? dom.value.length > 1
+                    ? dom.value
+                        .map((item, idx) => dom.options[idx][item].value)
+                        .join('，')
+                    : dom.value
+                        .map((item) => dom.options[item].value)
+                        .join('，')
+                : dom.value
+        };
+        const value = (formatMap[origin_dom.type] || formatMap.default)(origin_dom);
+        return value;
+    }
+    // 获取当前dom的value值的格式化值 用于展示
+    static get_dom_format_value(origin_dom) {
+        if (!origin_dom)
+            return '';
+        const formatMap = {
+            default: dom => dom.value,
+            input: dom => dom.value,
+            textarea: dom => dom.value,
+            select: dom => dom.options?.find((item) => item.value == dom.value)
+                ?.label,
+            select_human: dom => (dom.value ? dom.value.title || '' : ''),
+            select_voice: dom => (dom.value ? dom.value.title || '' : ''),
+            select_subscribe: dom => dom.value ? dom.value.author || '' : '',
+            picker_view: dom => !util.isEmpty(dom.value) && Array.isArray(dom.value)
+                ? dom.value.length > 1
+                    ? dom.value
+                        .map((item, idx) => dom.options[idx][item].label)
+                        .join('，')
+                    : dom.value
+                        .map((item) => dom.options[item].label)
+                        .join('，')
+                : '',
+            choose_photo: dom => !util.isEmpty(dom.value) && Array.isArray(dom.value)
+                ? dom.value.length > 0
+                    ? dom.value
+                        .map((item, idx) => img_choose_photo_dom({ src: item }))
+                        .join('\n\n')
+                    : ''
+                : img_choose_photo_dom({ src: dom.value })
+        };
+        return (formatMap[origin_dom.type] || formatMap.default)(origin_dom);
+    }
+    static get_new_default_dom(key, n_dom, sub_key = 'default') {
+        if (!n_dom)
+            return this;
+        const n_dom_entries = Object.entries(n_dom);
+        if (!n_dom_entries.length)
+            return this;
+        const originalDom = TaskClient.dom_map[key]?.[sub_key];
+        if (!originalDom)
+            return this;
+        // 创建深拷贝以避免共享引用
+        const dom = util.deepClone(originalDom);
+        n_dom_entries.forEach(([dom_key, value]) => {
+            if (Object.keys(dom).includes(dom_key))
+                dom[dom_key] = value;
+        });
+        return dom;
+    }
+    random_update_dom_value(dom) {
+        if (dom.need_random_value === false)
+            return dom;
+        const value_list = dom.value_list || [];
+        if (!value_list.length)
+            return dom;
+        dom.value = value_list[Math.floor(Math.random() * value_list.length)];
+        return dom;
+    }
+    random_update_dom_list(dom_list) {
+        dom_list.forEach(dom => {
+            this.random_update_dom_value(dom);
+        });
+        return dom_list;
+    }
+    get_task(task_key) {
+        return this[task_key];
+    }
+    get_new_task() {
+        const task = util.deepClone(TaskClient.task_template);
+        return task;
+    }
+    set_next_task(task, task_key, next_task) {
+        if (task) {
+            task.next_task = next_task;
+        }
+        else {
+            const foundTask = this.get_task_list_item(task_key);
+            if (foundTask) {
+                foundTask.next_task = next_task;
+            }
+        }
+    }
+    get_next_task(task, task_key) {
+        const currentTask = task || this.get_task_list_item(task_key);
+        if (!currentTask || !currentTask.next_task)
+            return null;
+        return this.get_task_list_item(currentTask.next_task) || null;
+    }
+    get_task_list() {
+        return this.task_list;
+    }
+    creat_task_list(task_key) {
+        this.task_list = [];
+        if (task_key)
+            this.add_task_list_item();
+        return this;
+    }
+    add_task_list_item() {
+        const task = this.get_new_task();
+        if (task)
+            this.task_list.push(task);
+        return this;
+    }
+    get_task_list_item(task_key) {
+        return this.task_list.find(item => item.key === task_key) || null;
+    }
+    get_task_list_index(task_key) {
+        return this.task_list.findIndex(item => item.key === task_key);
+    }
+    get_last_task_list_idx() {
+        const len = this.task_list.length;
+        return len - 1;
+    }
+    get_last_task_list_item() {
+        return this.task_list[this.get_last_task_list_idx()] || null;
+    }
+    set_task_list_item(idx, key, value) {
+        this.task_list[idx][key] = value;
+    }
+    edit_task_list_item(idx, task_option) {
+        if (idx === undefined || idx === null || idx < 0)
+            return this;
+        if (!task_option)
+            return this;
+        const task_option_entries = Object.entries(task_option);
+        if (!task_option_entries.length)
+            return this;
+        const task = this.task_list[idx] || null;
+        if (!task)
+            return this;
+        task_option_entries.forEach(([key, value]) => {
+            if (Object.keys(task).includes(key))
+                this.set_task_list_item(idx, key, value);
+        });
+        return this;
+    }
+    add_next(task_option) {
+        if (this.get_last_task_list_idx() > -1)
+            this.edit_task_list_item(this.get_last_task_list_idx(), {
+                next_task: task_option.key
+            });
+        this.add_task_list_item();
+        if (task_option)
+            this.edit_task_list_item(this.get_last_task_list_idx(), task_option);
+        return this;
+    }
+    get_next(last_task_key) {
+        const task = this.get_task_list_item(last_task_key);
+        if (!task || !task.next_task)
+            return null;
+        const next_task = this.get_task_list_item(task.next_task);
+        return next_task;
+    }
+}
+TaskClient.task_status_map = {
+    '-1': '未开始',
+    '0': '待开始',
+    '1': '进行中',
+    '2': '待完成',
+    '3': '已完成'
+};
+TaskClient.task_template = {
+    name: '任务名称',
+    key: '', // 任务标识
+    task_status: '0', // 任务状态 -1:未开始 0:待开始（对应开始节点） 1:进行中（对应中间节点） 2:待完成（对应结束节点）
+    dom_list: [], // dom列表
+    ai_config: {
+        message_list: []
+    },
+    show_next_btn: true, // 显示下一个任务文本
+    next_btn: `<a ${ActionClient.ACTION_KEY}='run_bot_next_task' data-next_task_key='next_task_key'>继续</a>`, // 下一个任务文本 也可更改为开始按钮
+    next_task_key: '' // 下一个任务
+};
+TaskClient.dom_map = {
+    text: {
+        default: {
+            title: '标题',
+            info: '', // 描述
+            value: '',
+            required: false, // 是否必填
+            show_title_bar: true, // 是否显示标题栏
+            show_title: true, // 是否显示标题
+            need_random_value: false, // 是否需要随机补充value值
+            is_need_edit: false // 是否需要编辑
+        }
+    },
+    textarea: {
+        default: {
+            type: 'textarea',
+            input_type: 'text',
+            info: '', // 任务描述
+            name: '', // 表单name
+            title: '标题',
+            value: '',
+            placeholder: '请输入',
+            placeholder_html: p_bot_task_placeholder_html('请输入'),
+            value_list: [], // value 的可选列表  常用于随机补充value值
+            maxlength: 500, // 最大长度 0为不限制
+            required: false, // 是否必填
+            show_title_bar: true, // 是否显示标题栏
+            show_title: true, // 是否显示标题
+            need_random_value: true, // 是否需要随机补充value值
+            is_need_edit: true // 是否需要编辑
+        }
+    },
+    select: {
+        default: {
+            title: '标题',
+            type: 'select',
+            info: '', // 任务描述
+            select_type: 'single', // 选择类型 单选 single 多选 multiple
+            name: '', // 表单name
+            options: [], // 选择列表
+            value: null, // 数组或者字符串  默认null
+            value_list: [], // value 的可选列表  常用于随机补充value值
+            placeholder: '请选择',
+            placeholder_html: p_bot_task_placeholder_html('请选择'),
+            required: false, // 是否必填
+            show_title_bar: true, // 是否显示标题栏
+            show_title: true, // 是否显示标题
+            need_random_value: true, // 是否需要随机补充value值
+            is_need_edit: true // 是否需要编辑
+        },
+        select_human: {
+            title: '选择形象',
+            type: 'select_human',
+            name: '', // 表单name
+            value: null, // object 当选形象数据  默认null
+            placeholder: '请选择',
+            placeholder_html: p_bot_task_placeholder_html('请选择'),
+            required: false, // 是否必填
+            show_title_bar: true, // 是否显示标题栏
+            show_title: true, // 是否显示标题
+            is_need_edit: true // 是否需要编辑
+        },
+        select_voice: {
+            title: '选择声音',
+            type: 'select_voice',
+            name: '', // 表单name
+            value: null, // object 当选声音数据  默认null
+            placeholder: '请选择',
+            placeholder_html: p_bot_task_placeholder_html('请选择'),
+            required: false, // 是否必填
+            show_title_bar: true, // 是否显示标题栏
+            show_title: true, // 是否显示标题
+            is_need_edit: true // 是否需要编辑
+        },
+        select_subscribe: {
+            title: '选择订阅',
+            type: 'select_subscribe',
+            name: '', // 表单name
+            value: null, // object 当选订阅数据  默认null
+            placeholder: '请选择',
+            placeholder_html: p_bot_task_placeholder_html('请选择'),
+            required: false, // 是否必填
+            show_title_bar: true, // 是否显示标题栏
+            show_title: true, // 是否显示标题
+            is_need_edit: true // 是否需要编辑
+        },
+        select_task: {
+            title: '标题',
+            type: 'select_task',
+            info: '', // 任务描述
+            name: '', // 表单name
+            options: [], // 选择列表
+            value: null, // 数组或者字符串  默认null
+            placeholder: '请选择工作指令',
+            placeholder_html: p_bot_task_placeholder_html('请选择工作指令'),
+            html: `<p>
+          <a>任务1</a>
+          <br/>
+          <a>任务2</a>
+        </p>`, // 选择任务的html
+            required: false, // 是否必填
+            show_title_bar: true, // 是否显示标题栏
+            show_title: true, // 是否显示标题
+            need_random_value: false, // 是否需要随机补充value值
+            is_need_edit: false // 是否需要编辑
+        }
+    },
+    picker_view: {
+        default: {
+            title: '标题',
+            type: 'picker_view',
+            info: '', // 任务描述
+            name: '', // 表单name
+            options: [], // 选择列表
+            value: null, // 数组或者字符串  默认null
+            value_list: [], // value 的可选列表  常用于随机补充value值
+            placeholder: '请选择',
+            placeholder_html: p_bot_task_placeholder_html('请选择'),
+            required: false, // 是否必填
+            show_title_bar: true, // 是否显示标题栏
+            show_title: true, // 是否显示标题
+            need_random_value: true, // 是否需要随机补充value值
+            is_need_edit: true // 是否需要编辑
+        }
+    },
+    choose_message: {
+        default: {
+            title: '标题',
+            type: 'choose_message',
+            info: '', // 任务描述
+            name: '', // 表单name
+            value: null, // 数组
+            placeholder: '请选择聊天内容',
+            placeholder_html: p_bot_task_placeholder_html('请选择聊天内容'),
+            required: false, // 是否必填
+            show_title_bar: true, // 是否显示标题栏
+            show_title: true, // 是否显示标题
+            need_random_value: false, // 是否需要随机补充value值
+            is_need_edit: true // 是否需要编辑
+        }
+    },
+    choose_photo: {
+        default: {
+            title: '标题',
+            type: 'choose_photo',
+            info: '', // 任务描述
+            name: '', // 表单name
+            value: null, // 数组
+            placeholder: '请选择图片',
+            placeholder_html: p_bot_task_placeholder_html('请选择图片'),
+            required: false, // 是否必填
+            show_title_bar: true, // 是否显示标题栏
+            show_title: true, // 是否显示标题
+            need_random_value: false, // 是否需要随机补充value值
+            is_need_edit: true // 是否需要编辑
+        }
+    }
+};
+export default TaskClient;

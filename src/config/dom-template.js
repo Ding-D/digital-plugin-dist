@@ -1,1 +1,65 @@
-const a4_0x4b1b62=a4_0x241f;(function(_0x49211d,_0x4b870f){const _0x46c3d4=a4_0x241f,_0x109fda=_0x49211d();while(!![]){try{const _0x412a9a=-parseInt(_0x46c3d4(0x1fa))/0x1*(parseInt(_0x46c3d4(0x1ee))/0x2)+parseInt(_0x46c3d4(0x204))/0x3+parseInt(_0x46c3d4(0x1f2))/0x4+parseInt(_0x46c3d4(0x1eb))/0x5+-parseInt(_0x46c3d4(0x205))/0x6+-parseInt(_0x46c3d4(0x1ec))/0x7+parseInt(_0x46c3d4(0x200))/0x8*(parseInt(_0x46c3d4(0x207))/0x9);if(_0x412a9a===_0x4b870f)break;else _0x109fda['push'](_0x109fda['shift']());}catch(_0x1bbfc4){_0x109fda['push'](_0x109fda['shift']());}}}(a4_0x3ada,0x9c301));import a4_0x38a86e from'../client/ActionClient';const ACTION_KEY=a4_0x38a86e[a4_0x4b1b62(0x1ef)];export const a_bot_task_start=(_0x4deb2e={})=>{const _0x227362=a4_0x4b1b62,{split_task_limit:_0x583d23,text:text=_0x227362(0x1f8)}=_0x4deb2e;return _0x227362(0x1fe)+ACTION_KEY+_0x227362(0x206)+_0x583d23+_0x227362(0x1e6)+text+_0x227362(0x1f1);};function a4_0x241f(_0x173880,_0x1d3c6d){const _0x3ada7b=a4_0x3ada();return a4_0x241f=function(_0x241f76,_0x55d028){_0x241f76=_0x241f76-0x1e6;let _0x4ea6b9=_0x3ada7b[_0x241f76];return _0x4ea6b9;},a4_0x241f(_0x173880,_0x1d3c6d);}function a4_0x3ada(){const _0x3485fd=['<p\x20class=\x27align-center\x27\x20style=\x27display:\x20flex;\x27>\x0a\x20\x20<a\x20','</a>','1171576MSFtmZ','跳转按钮1','\x27\x20data-user_content=\x27','\x27\x20class=\x27','2111178nkgabk','7457418cKPmyW','=\x27run_bot_end_task\x27\x20data-split_task_limit=\x27','27uiwYNw','\x27\x20class=\x27flex-1\x20h-80\x20leading-80\x20bg-primary\x20text-28\x20text-center\x20text-white\x20rounded-10\x27>','<p\x20class=\x27text-info\x27>','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','<p\x20class=\x27align-center\x20justify-around\x20gap-20\x27\x20style=\x27display:\x20flex;\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','=\x27create_subscribe\x27\x20data-split_task_limit=\x27','4318350DkrcXZ','850927HxPgiK','flex-1\x20h-80\x20leading-80\x20bg-primary\x20text-white\x20text-center\x20text-28\x20rounded-10','1188YVnBlJ','ACTION_KEY','订阅制作','</a>\x0a\x20\x20</p>','3682192nsoxwe','开始工作2','<a\x20','<p\x20class=\x27align-center\x20justify-around\x20gap-20\x27\x20style=\x27display:\x20flex;\x27>','\x0a\x20\x20\x20\x20\x20\x20\x20\x20</p>','=\x27run_bot_next_task\x27\x20data-next_task_key=\x27','开始工作','\x27\x20alt=\x27','1554mLgGIJ','=\x27run_workflow_end_task\x27\x20data-split_task_limit=\x27','<img\x20src=\x27','</p>'];a4_0x3ada=function(){return _0x3485fd;};return a4_0x3ada();}export const a_workflow_task_start=(_0x14cf49={})=>{const _0x30c13b=a4_0x4b1b62,{split_task_limit:split_task_limit='1',text:text='开始工作'}=_0x14cf49;return'<p\x20class=\x27align-center\x27\x20style=\x27display:\x20flex;\x27>\x0a\x20\x20<a\x20'+ACTION_KEY+_0x30c13b(0x1fb)+split_task_limit+_0x30c13b(0x1e6)+text+_0x30c13b(0x1f1);};export const a_bot_task_next=(_0xf35fa4={})=>{const _0xd43c8c=a4_0x4b1b62,{next_task_key:_0x399409,user_content:_0x9c12c5,text:_0x849a19}=_0xf35fa4,_0x3a509f=_0xd43c8c(0x1ed);return'<a\x20'+ACTION_KEY+_0xd43c8c(0x1f7)+_0x399409+_0xd43c8c(0x202)+_0x9c12c5+_0xd43c8c(0x203)+_0x3a509f+'\x27>'+_0x849a19+_0xd43c8c(0x1ff);};export const a_bot_turn_to=(_0x51e7b6={})=>{const _0x5d3559=a4_0x4b1b62,{text:text='按钮名称',url:url=''}=_0x51e7b6;return _0x5d3559(0x1f4)+ACTION_KEY+'=\x27turn_to\x27\x20data-url=\x27'+url+_0x5d3559(0x1e6)+text+_0x5d3559(0x1ff);};export const a_create_subscribe=(_0x222fe7={})=>{const _0x41379e=a4_0x4b1b62,{text:text=_0x41379e(0x1f0),split_task_limit:split_task_limit=0x1}=_0x222fe7;return'<p\x20class=\x27align-center\x27\x20style=\x27display:\x20flex;\x27><a\x20'+ACTION_KEY+_0x41379e(0x1ea)+split_task_limit+_0x41379e(0x1e6)+text+'</a></p>';};export const p_bot_task_placeholder_html=_0x36bede=>{const _0x497d0e=a4_0x4b1b62;return _0x497d0e(0x1e7)+_0x36bede+_0x497d0e(0x1fd);};export const box_bot_task_choose=(_0x4480ce={})=>{const _0x1d2464=a4_0x4b1b62,{text:text='',next_task_key:next_task_key='2',user_content:user_content=_0x1d2464(0x1f8)}=_0x4480ce;return _0x1d2464(0x1f5)+a_bot_task_next({'text':text,'next_task_key':next_task_key,'user_content':user_content})+_0x1d2464(0x1fd);};export const box_bot_task_choose_2=(_0x1dde45={})=>{const _0x30da61=a4_0x4b1b62,{text_1:text_1='',next_task_key_1:next_task_key_1='2',user_content_1:user_content_1='开始工作1',text_2:text_2='',next_task_key_2:next_task_key_2='3',user_content_2:user_content_2=_0x30da61(0x1f3)}=_0x1dde45,_0x24322d=_0x30da61(0x1ed);return _0x30da61(0x1e9)+a_bot_task_next({'text':text_1,'next_task_key':next_task_key_1,'user_content':user_content_1})+_0x30da61(0x1e8)+a_bot_task_next({'text':text_2,'next_task_key':next_task_key_2,'user_content':user_content_2})+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20</p>';};export const box_bot_turn_to_2=(_0x4a6da5={})=>{const _0x24a0a3=a4_0x4b1b62,{text_1:text_1=_0x24a0a3(0x201),url_1:url_1='',text_2:text_2=_0x24a0a3(0x201),url_2:url_2=''}=_0x4a6da5;return _0x24a0a3(0x1e9)+a_bot_turn_to({'text':text_1,'url':url_1})+_0x24a0a3(0x1e8)+a_bot_turn_to({'text':text_2,'url':url_2})+_0x24a0a3(0x1f6);};export const box_bot_turn_and_choose=(_0x4b1977={})=>{const _0x4263d9=a4_0x4b1b62,{text_1:text_1=_0x4263d9(0x201),url_1:url_1='',text_2:text_2='',next_task_key_2:next_task_key_2='2',user_content_2:user_content_2=_0x4263d9(0x1f3)}=_0x4b1977;return'<p\x20class=\x27align-center\x20justify-around\x20gap-20\x27\x20style=\x27display:\x20flex;\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+a_bot_turn_to({'text':text_1,'url':url_1})+_0x4263d9(0x1e8)+a_bot_task_next({'text':text_2,'next_task_key':next_task_key_2,'user_content':user_content_2})+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20</p>';};export function img_choose_photo_dom(_0x4b68b7={}){const _0x40431b=a4_0x4b1b62,{src:src='',alt:alt=''}=_0x4b68b7;return _0x40431b(0x1fc)+src+_0x40431b(0x1f9)+alt+'\x27\x20style=\x27object-fix:contain;\x27\x20/>';}
+import ActionClient from '../client/ActionClient';
+const ACTION_KEY = ActionClient.ACTION_KEY;
+// 命名规则 ：组件名_组件位置_组件作用
+// a标签区域
+export const a_bot_task_start = (options = {}) => {
+    const { split_task_limit, text = '开始工作' } = options;
+    return `<p class='align-center' style='display: flex;'>
+  <a ${ACTION_KEY}='run_bot_end_task' data-split_task_limit='${split_task_limit}' class='flex-1 h-80 leading-80 bg-primary text-28 text-center text-white rounded-10'>${text}</a>
+  </p>`;
+};
+export const a_workflow_task_start = (options = {}) => {
+    const { split_task_limit = '1', text = '开始工作' } = options;
+    return `<p class='align-center' style='display: flex;'>
+  <a ${ACTION_KEY}='run_workflow_end_task' data-split_task_limit='${split_task_limit}' class='flex-1 h-80 leading-80 bg-primary text-28 text-center text-white rounded-10'>${text}</a>
+  </p>`;
+};
+export const a_bot_task_next = (options = {}) => {
+    const { next_task_key, user_content, text } = options;
+    const a_class = 'flex-1 h-80 leading-80 bg-primary text-white text-center text-28 rounded-10';
+    return `<a ${ACTION_KEY}='run_bot_next_task' data-next_task_key='${next_task_key}' data-user_content='${user_content}' class='${a_class}'>${text}</a>`;
+};
+export const a_bot_turn_to = (options = {}) => {
+    const { text = '按钮名称', url = '' } = options;
+    return `<a ${ACTION_KEY}='turn_to' data-url='${url}' class='flex-1 h-80 leading-80 bg-primary text-28 text-center text-white rounded-10'>${text}</a>`;
+};
+export const a_create_subscribe = (options = {}) => {
+    const { text = '订阅制作', split_task_limit = 1 } = options;
+    return `<p class='align-center' style='display: flex;'><a ${ACTION_KEY}='create_subscribe' data-split_task_limit='${split_task_limit}' class='flex-1 h-80 leading-80 bg-primary text-28 text-center text-white rounded-10'>${text}</a></p>`;
+};
+// p标签区域
+export const p_bot_task_placeholder_html = (text) => {
+    return `<p class='text-info'>${text}</p>`;
+};
+// box区域
+export const box_bot_task_choose = (options = {}) => {
+    const { text = '', next_task_key = '2', user_content = '开始工作' } = options;
+    return `<p class='align-center justify-around gap-20' style='display: flex;'>${a_bot_task_next({ text, next_task_key, user_content })}</p>`;
+};
+export const box_bot_task_choose_2 = (options = {}) => {
+    const { text_1 = '', next_task_key_1 = '2', user_content_1 = '开始工作1', text_2 = '', next_task_key_2 = '3', user_content_2 = '开始工作2' } = options;
+    const a_class = 'flex-1 h-80 leading-80 bg-primary text-white text-center text-28 rounded-10';
+    return `<p class='align-center justify-around gap-20' style='display: flex;'>
+            ${a_bot_task_next({ text: text_1, next_task_key: next_task_key_1, user_content: user_content_1 })}
+            ${a_bot_task_next({ text: text_2, next_task_key: next_task_key_2, user_content: user_content_2 })}
+        </p>`;
+};
+export const box_bot_turn_to_2 = (options = {}) => {
+    const { text_1 = '跳转按钮1', url_1 = '', text_2 = '跳转按钮1', url_2 = '' } = options;
+    return `<p class='align-center justify-around gap-20' style='display: flex;'>
+            ${a_bot_turn_to({ text: text_1, url: url_1 })}
+            ${a_bot_turn_to({ text: text_2, url: url_2 })}
+        </p>`;
+};
+export const box_bot_turn_and_choose = (options = {}) => {
+    const { text_1 = '跳转按钮1', url_1 = '', text_2 = '', next_task_key_2 = '2', user_content_2 = '开始工作2' } = options;
+    return `<p class='align-center justify-around gap-20' style='display: flex;'>
+            ${a_bot_turn_to({ text: text_1, url: url_1 })}
+            ${a_bot_task_next({ text: text_2, next_task_key: next_task_key_2, user_content: user_content_2 })}
+        </p>`;
+};
+// img 区域
+export function img_choose_photo_dom(options = {}) {
+    const { src = '', alt = '' } = options;
+    return `<img src='${src}' alt='${alt}' style='object-fix:contain;' />`;
+}

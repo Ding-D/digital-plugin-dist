@@ -1,1 +1,1405 @@
-const a1_0x54f2f0=a1_0x3b2b;(function(_0x3adb45,_0x560915){const _0x12b613=a1_0x3b2b,_0xf3f596=_0x3adb45();while(!![]){try{const _0x5c7181=-parseInt(_0x12b613(0x164))/0x1*(-parseInt(_0x12b613(0x151))/0x2)+parseInt(_0x12b613(0xf4))/0x3+parseInt(_0x12b613(0x135))/0x4+parseInt(_0x12b613(0x130))/0x5+parseInt(_0x12b613(0x189))/0x6+-parseInt(_0x12b613(0x183))/0x7+-parseInt(_0x12b613(0xf9))/0x8*(parseInt(_0x12b613(0x102))/0x9);if(_0x5c7181===_0x560915)break;else _0xf3f596['push'](_0xf3f596['shift']());}catch(_0xe016dd){_0xf3f596['push'](_0xf3f596['shift']());}}}(a1_0x4865,0xf34f7));import a1_0x35c2e2 from'../utils';class CozeClient{constructor(_0x5ec499){const _0x969217=a1_0x3b2b;this[_0x969217(0xec)]='Uniapp',this[_0x969217(0xc7)]={'postConsume':CozeClient[_0x969217(0xc1)],'getToken':CozeClient['empty_promise']},this[_0x969217(0x15f)]={'postConsume':_0x229705=>this[_0x969217(0xc7)][_0x969217(0x125)]=_0x229705||CozeClient[_0x969217(0xc1)],'getToken':_0x5e85d2=>this[_0x969217(0xc7)]['getToken']=_0x5e85d2||CozeClient[_0x969217(0xc1)]},this[_0x969217(0x11a)]=null,this[_0x969217(0xd9)]='bot.chat',this[_0x969217(0x128)]={'bot':{'chat':'https://api.coze.cn/v3/chat','conversation':{'create':_0x969217(0x10f)}},'workflow':{'run':_0x969217(0xd0),'stream_run':'https://api.coze.cn/v1/workflow/stream_run'}},this[_0x969217(0xda)]={'bot':{'chat':_0x319691=>this[_0x969217(0x128)][_0x969217(0x178)]['chat']=_0x319691,'conversation':{'create':_0x106656=>this[_0x969217(0x128)]['bot'][_0x969217(0x10d)][_0x969217(0xc4)]=_0x106656}},'workflow':{'run':_0x5bd089=>this['urlConfig'][_0x969217(0x14e)][_0x969217(0xea)]=_0x5bd089,'stream_run':_0x54f2f1=>this[_0x969217(0x128)]['workflow'][_0x969217(0xe0)]=_0x54f2f1}},this[_0x969217(0x120)]={'bot.chat':!![],'workflow.stream_run':!![]},this[_0x969217(0xd2)]='',this[_0x969217(0xd8)]='',this[_0x969217(0x107)]=![],this[_0x969217(0xd5)]=!![],this[_0x969217(0xfe)]=0x9,this['consume_loading']=![],this[_0x969217(0x10b)](_0x5ec499);}[a1_0x54f2f0(0x10b)](_0x925f25){const _0x2ad061=a1_0x54f2f0,{cozeToken:_0x5b645e,urlType:urlType='bot.chat',platform:platform=_0x2ad061(0xf8),request:_0xf3168c,urlConfig:urlConfig={},token_callback:_0x280629,requestClient:_0x498d76}=_0x925f25||{};if(urlConfig)this['init_url_config'](urlConfig);if(urlType)this['init_url_type'](urlType);if(platform)this['platform']=platform;if(_0x5b645e)this[_0x2ad061(0xd2)]=_0x5b645e;if(_0xf3168c)this[_0x2ad061(0x10e)](_0xf3168c);if(_0x498d76)this[_0x2ad061(0x11a)]=_0x498d76;this['init_consume'](_0x925f25||{}),this[_0x2ad061(0x149)](_0x280629||null);}[a1_0x54f2f0(0x10e)](_0x11b9e1){const _0x5b7f08=a1_0x54f2f0;if(!_0x11b9e1)return;const _0x4c36ce=(_0x1baef7,_0x4a20ad)=>{if(!_0x1baef7)return;if(typeof _0x1baef7==='object')for(const _0x587efd in _0x1baef7){_0x4c36ce(_0x1baef7[_0x587efd],_0x4a20ad[_0x587efd]);}typeof _0x1baef7==='function'&&_0x4a20ad(_0x1baef7);};_0x4c36ce(_0x11b9e1,this[_0x5b7f08(0x15f)]);}['init_url_config'](_0x35a880){const _0x10af37=a1_0x54f2f0;if(!_0x35a880)return;const _0x49f9ca=(_0x5cdfdc,_0x8b68d1)=>{const _0xfec27d=a1_0x3b2b;if(!_0x5cdfdc)return;if(typeof _0x5cdfdc===_0xfec27d(0x18b))for(const _0x4c381e in _0x5cdfdc){_0x49f9ca(_0x5cdfdc[_0x4c381e],_0x8b68d1[_0x4c381e]);}typeof _0x5cdfdc===_0xfec27d(0xfc)&&_0x8b68d1(_0x5cdfdc);};_0x49f9ca(_0x35a880,this[_0x10af37(0xda)]);}[a1_0x54f2f0(0x11d)](_0x10de4b){if(_0x10de4b)this['urlType']=_0x10de4b;}['init_consume'](_0x521c31){const _0x564850=a1_0x54f2f0,{consume_id:_0x52c1ae,is_consume:_0x39006d}=_0x521c31;_0x52c1ae!==undefined&&!a1_0x35c2e2[_0x564850(0x12d)](_0x52c1ae)&&a1_0x35c2e2[_0x564850(0x163)](_0x52c1ae)?this[_0x564850(0xfe)]=_0x52c1ae:this[_0x564850(0xfe)]=0x9;if(!a1_0x35c2e2[_0x564850(0x12d)](_0x39006d)){this[_0x564850(0xd5)]=!!_0x39006d;if(!this['is_consume'])this['consume_id']=-0x1;}else this[_0x564850(0xd5)]=!![];}[a1_0x54f2f0(0x160)](_0x37027f){const _0x7c8c76=a1_0x54f2f0;if(_0x37027f[_0x7c8c76(0xd9)])this[_0x7c8c76(0x11d)](_0x37027f['urlType']);this[_0x7c8c76(0xcc)]({'consume_id':a1_0x35c2e2[_0x7c8c76(0x12d)](_0x37027f['consume_id'])?0x9:_0x37027f[_0x7c8c76(0xfe)],'is_consume':a1_0x35c2e2[_0x7c8c76(0x12d)](_0x37027f[_0x7c8c76(0xd5)])?!![]:_0x37027f[_0x7c8c76(0xd5)]});}[a1_0x54f2f0(0x192)](){const _0x3d29cb=a1_0x54f2f0,_0x2f1665=this[_0x3d29cb(0xd9)]['split']('.');let _0x3103c1=a1_0x35c2e2['deepClone'](this[_0x3d29cb(0x128)]);for(let _0x578f6b=0x0;_0x578f6b<_0x2f1665[_0x3d29cb(0x1a1)];_0x578f6b++){if(!_0x3103c1[_0x2f1665[_0x578f6b]])throw new Error(_0x3d29cb(0x14f)+_0x2f1665[_0x578f6b]+_0x3d29cb(0xdb));_0x3103c1=_0x3103c1[_0x2f1665[_0x578f6b]];}return _0x3103c1;}[a1_0x54f2f0(0x18c)](_0x385c24){const _0x1af5cb=a1_0x54f2f0;if(!this[_0x1af5cb(0xd2)])throw new Error(_0x1af5cb(0x155));const {params:_0x47613c,callback:callback=()=>{},clientOptions:clientOptions={}}=_0x385c24||{};this[_0x1af5cb(0x160)](clientOptions);let _0x483da6=this['get_url']();if(_0x47613c){const _0x1b227b=a1_0x35c2e2['URLSearchParams'](_0x47613c);_0x483da6+='?'+_0x1b227b[_0x1af5cb(0x156)]();}try{return this[_0x1af5cb(0xdc)](_0x483da6,_0x385c24);}catch(_0x5189b9){console[_0x1af5cb(0x173)](_0x1af5cb(0x1a2),_0x5189b9);const _0x14824c=this['get_errorinfo'](_0x5189b9);return callback({'type':_0x1af5cb(0x173),'content':'','error':_0x14824c,'isFinished':!![]}),null;}}[a1_0x54f2f0(0xdc)](_0x376bd6,_0x2df171){const _0x5cccee=a1_0x54f2f0,_0x3bd69d=this['request'+'By'+this['platform']](Object[_0x5cccee(0xdf)]({'url':_0x376bd6},_0x2df171));return _0x3bd69d;}async[a1_0x54f2f0(0x129)](_0x35dde4){}[a1_0x54f2f0(0x175)](_0x3d13af){const _0x2ce1c6=a1_0x54f2f0,{url:_0x2512f7,body:_0x34abcf,callback:callback=()=>{}}=_0x3d13af||{},_0x420ce2=this[_0x2ce1c6(0x169)]();if(_0x420ce2){const _0x205644=uni['request']({'url':_0x2512f7,'method':_0x2ce1c6(0x1a0),'header':{'Content-Type':_0x2ce1c6(0x126),'Authorization':'Bearer\x20'+this[_0x2ce1c6(0xd2)]},'data':JSON[_0x2ce1c6(0xe3)](this[_0x2ce1c6(0x131)](_0x34abcf)),'enableChunked':!![],'success':_0x11e906=>{const _0x4bf335=_0x2ce1c6;console[_0x4bf335(0x18e)]('🚀\x20~\x20requestByUniapp\x20~\x20success:',_0x11e906);if(_0x11e906[_0x4bf335(0x154)]!==0xc8||_0x11e906[_0x4bf335(0x16a)][_0x4bf335(0xef)]!==0x0)callback({'type':'error','content':_0x4bf335(0x16e),'error':new Error('Request\x20failed\x20with\x20status\x20'+_0x11e906[_0x4bf335(0x154)]),'isFinished':!![]});else{const _0x6d1009=_0x577921=>{callback({'type':'consume_end','consume_num':_0x577921,'isFinished':!![]});};this['consumeIntegral'](_0x6d1009);}},'fail':_0x4d7601=>{const _0x108d22=_0x2ce1c6;console['error'](_0x108d22(0x15b),_0x4d7601),callback({'type':_0x108d22(0x173),'error':_0x4d7601,'isFinished':!![]});}});return _0x205644[_0x2ce1c6(0x15e)](_0x33cd91=>{const _0x587b68=_0x2ce1c6;try{const _0x4b1905=a1_0x35c2e2[_0x587b68(0x144)](new Uint8Array(_0x33cd91[_0x587b68(0x16a)]));if(!_0x4b1905)return;const _0x5da395=this['handleResponse']();if(_0x5da395)_0x5da395[_0x587b68(0x12f)](this,_0x4b1905,callback);else throw new Error('CozeClient\x20sendMessage\x20Error:\x20No\x20handleStream\x20function\x20found\x20for\x20the\x20API\x20type.');}catch(_0x3edea0){console[_0x587b68(0x173)]('🚀\x20~\x20onChunkReceived\x20~\x20error:',_0x3edea0),console[_0x587b68(0x173)]('🚀\x20~\x20onChunkReceived\x20~\x20error:',_0x33cd91),_0x205644[_0x587b68(0x17a)](),callback({'content':'回复失败，请稍后再试','type':_0x587b68(0x173),'error':_0x3edea0,'isFinished':!![]});}}),_0x205644['onHeadersReceived'](_0x5691d7=>{}),_0x205644;}else return uni[_0x2ce1c6(0xc7)]({'url':_0x2512f7,'method':_0x2ce1c6(0x1a0),'header':{'Content-Type':_0x2ce1c6(0x126),'Authorization':_0x2ce1c6(0xc9)+this[_0x2ce1c6(0xd2)]},'data':JSON[_0x2ce1c6(0xe3)](_0x34abcf),'success':_0xe1fff7=>{const _0x447c56=_0x2ce1c6;if(_0xe1fff7['statusCode']!==0xc8)callback({'type':_0x447c56(0x173),'error':new Error(_0x447c56(0xee)+_0xe1fff7[_0x447c56(0x154)]),'isFinished':!![]});else{const _0x3d8a0e=this[_0x447c56(0x17c)](_0xe1fff7);if(_0x3d8a0e){const _0x5a2705=_0x445d1f=>{const _0x32638e=_0x447c56,_0x26864b=_0x19e6ab=>{const _0x369e59=a1_0x3b2b;callback({'type':_0x369e59(0x170),'data':_0x19e6ab,'consume_num':_0x445d1f,'isFinished':!![]});};this[_0x32638e(0x186)]()?.['call'](this,_0xe1fff7,_0x26864b);};this['consumeIntegral'](_0x5a2705);}else{const _0x28e66a=_0x491c17=>{callback({'type':'consume_end','data':_0x491c17,'consume_num':0x0,'isFinished':!![]});};this[_0x447c56(0x186)]()?.['call'](this,_0xe1fff7,_0x28e66a);}}},'fail':_0x2dd245=>{const _0xd037e6=_0x2ce1c6;console['error'](_0xd037e6(0x15b),_0x2dd245),callback({'type':'error','error':_0x2dd245,'isFinished':!![]});}}),null;}[a1_0x54f2f0(0x186)](){const _0x5de505=a1_0x54f2f0;switch(this[_0x5de505(0xd9)]){case _0x5de505(0x176):return this[_0x5de505(0xe7)];case _0x5de505(0x168):return this[_0x5de505(0x13e)];case _0x5de505(0x112):return this[_0x5de505(0x121)];default:return null;}}async[a1_0x54f2f0(0xe7)](_0x5c1106,_0x5084fb){const _0x476a82=a1_0x54f2f0;let _0x5a9065=CozeClient[_0x476a82(0x15c)]();try{this[_0x476a82(0x133)](_0x5a9065,_0x5c1106,_0x5084fb);}catch(_0x38c31a){console[_0x476a82(0x173)](_0x476a82(0xc5),_0x38c31a),_0x5084fb({'type':_0x476a82(0x173),'error':{'message':_0x38c31a?.[_0x476a82(0x16f)]||'','code':_0x476a82(0x143)},'isFinished':![]});}}async[a1_0x54f2f0(0x13e)](_0xfa3028,_0xc583f2){const _0x26f64a=a1_0x54f2f0;let _0x3c688e=_0xfa3028[_0x26f64a(0x16a)];if(_0x3c688e[_0x26f64a(0xef)]==0x0){let _0x1e1ae3=JSON[_0x26f64a(0x17d)](_0x3c688e['data']);_0xc583f2&&_0xc583f2(_0x1e1ae3);}else _0xc583f2&&_0xc583f2(null);}async[a1_0x54f2f0(0x121)](_0x52e03e,_0x1227a2){const _0x4bc2a2=a1_0x54f2f0;let _0x13230f=CozeClient['get_stream_state']();try{this[_0x4bc2a2(0x13b)](_0x13230f,_0x52e03e,_0x1227a2);}catch(_0x2794a6){console[_0x4bc2a2(0x173)](_0x4bc2a2(0x19d),_0x2794a6),_0x1227a2({..._0x13230f,'type':'error','content':_0x2794a6?.[_0x4bc2a2(0x16f)]||'','isFinished':![]});}}async[a1_0x54f2f0(0x133)](_0x2a16df,_0x23318b,_0x48501e){const _0x18cc59=a1_0x54f2f0,_0x503a96=this[_0x18cc59(0xc6)](_0x23318b);let _0x1ab623=null;for(const _0x482f5e of _0x503a96){if(!_0x482f5e[_0x18cc59(0xd6)]())continue;const _0x25b29d=this[_0x18cc59(0x14b)](_0x482f5e);if(!_0x25b29d){_0x1ab623=this[_0x18cc59(0x109)](_0x482f5e);continue;}_0x2a16df[_0x18cc59(0x123)]=_0x25b29d['id'],_0x2a16df['conversationId']=_0x25b29d[_0x18cc59(0xd8)],_0x2a16df[_0x18cc59(0x14c)]=_0x25b29d[_0x18cc59(0xd3)],_0x2a16df[_0x18cc59(0xfd)]=_0x25b29d[_0x18cc59(0xff)],_0x2a16df['usage']=_0x25b29d[_0x18cc59(0x161)];if(_0x25b29d[_0x18cc59(0xe2)])return _0x48501e({..._0x2a16df,'type':_0x18cc59(0x173),'isFinished':!![],'content':_0x25b29d['errInfo'][_0x18cc59(0x16f)]});switch(_0x1ab623){case _0x18cc59(0xd4):_0x48501e({..._0x2a16df,'type':_0x18cc59(0xf6),'isFinished':![]});break;case _0x18cc59(0x16b):_0x48501e({..._0x2a16df,'type':_0x18cc59(0x108),'isFinished':![]});break;case _0x18cc59(0x158):_0x48501e({..._0x2a16df,'type':_0x18cc59(0x142),'isFinished':![]});break;case _0x18cc59(0x110):_0x25b29d[_0x18cc59(0x17b)]===_0x18cc59(0xeb)&&(_0x25b29d[_0x18cc59(0x122)]?_0x2a16df[_0x18cc59(0x122)]=_0x25b29d[_0x18cc59(0x122)]||'':_0x2a16df[_0x18cc59(0x15d)]=_0x25b29d[_0x18cc59(0x15d)]||'');_0x48501e({..._0x2a16df,'type':'message_delta','isFinished':![]});break;case'conversation.message.completed':_0x25b29d[_0x18cc59(0x17f)]==='follow_up'?_0x48501e({..._0x2a16df,'type':_0x18cc59(0x18f),'content':_0x25b29d[_0x18cc59(0x15d)],'isFinished':![]}):_0x48501e({..._0x2a16df,'type':'message_completed','isFinished':![]});break;case _0x18cc59(0x15a):_0x2a16df['isStreamFinished']=!![],_0x48501e({..._0x2a16df,'type':_0x18cc59(0x170),'consume_num':this['get_consume_num'](this[_0x18cc59(0xfe)]),'isFinished':![]}),_0x48501e({..._0x2a16df,'type':'done','isFinished':!![]});break;case'error':_0x48501e({..._0x2a16df,'type':_0x18cc59(0x173),'isFinished':!![]});break;}}}async['workflowStreamCallback'](_0x2320ac,_0x3db86d,_0x26c53a){const _0xe3d15c=a1_0x54f2f0,_0x57b045=this[_0xe3d15c(0xc6)](_0x3db86d);let _0x3e3c4c=null;for(const _0xee9bf4 of _0x57b045){if(!_0xee9bf4[_0xe3d15c(0xd6)]())continue;const _0x7cb0c7=this[_0xe3d15c(0x14b)](_0xee9bf4);if(!_0x7cb0c7){_0x3e3c4c=this[_0xe3d15c(0x109)](_0xee9bf4);continue;}if(_0x7cb0c7[_0xe3d15c(0xe2)])return _0x26c53a({..._0x2320ac,'type':_0xe3d15c(0x15a),'isFinished':!![],'content':_0x7cb0c7[_0xe3d15c(0xe2)][_0xe3d15c(0x16f)]});switch(_0x3e3c4c){case _0xe3d15c(0x196):if(_0x7cb0c7['content']){let _0x3eab39=_0x7cb0c7['content'];try{const _0x1e063c=JSON['parse'](_0x3eab39);if(_0x1e063c[_0xe3d15c(0x177)])continue;}catch(_0x5c07fc){}_0x2320ac[_0xe3d15c(0x15d)]=_0x3eab39,_0x26c53a({..._0x2320ac,'type':_0xe3d15c(0x16f),'content':_0x2320ac[_0xe3d15c(0x15d)],'delta':_0x3eab39,'nodeId':_0x7cb0c7[_0xe3d15c(0x11c)],'nodeTitle':_0x7cb0c7[_0xe3d15c(0xc8)],'isFinished':_0x7cb0c7['node_is_finish']});}break;case _0xe3d15c(0xd1):_0x26c53a({..._0x2320ac,'type':_0xe3d15c(0x170),'consume_num':this[_0xe3d15c(0x174)](this[_0xe3d15c(0xfe)]),'isFinished':![]}),_0x26c53a({..._0x2320ac,'type':_0xe3d15c(0x180),'content':_0x2320ac[_0xe3d15c(0x15d)],'isFinished':!![],'isStreamFinished':!![]});break;case _0xe3d15c(0xe5):_0x26c53a({..._0x2320ac,'type':'error','content':_0xe3d15c(0x12b),'isFinished':!![]});break;}}}['check_workflow_is_success'](_0x2311e1){const _0x3406f3=a1_0x54f2f0;let _0x13c374=_0x2311e1[_0x3406f3(0x16a)];if(_0x13c374[_0x3406f3(0xef)]==0x0){let _0x52a3f8=JSON[_0x3406f3(0x17d)](_0x13c374[_0x3406f3(0x16a)]);const _0x2e32cd=Object[_0x3406f3(0x18d)](_0x52a3f8)[_0x3406f3(0x115)](_0x3406f3(0x103));if(_0x2e32cd&&_0x52a3f8[_0x3406f3(0x103)]===![])return![];return!![];}else return![];}[a1_0x54f2f0(0x11f)](_0x228259){const _0x5a54cd=a1_0x54f2f0;let _0x39602a={'code':0x1388,'message':_0x5a54cd(0xfa),'solution':'请稍后重试','details':null};if(typeof _0x228259===_0x5a54cd(0x18b)){if(_0x228259['code']){const _0x5d362c=CozeClient[_0x5a54cd(0x18a)][_0x228259[_0x5a54cd(0xef)]];_0x5d362c?_0x39602a={'code':_0x228259[_0x5a54cd(0xef)],'message':_0x228259['msg']||_0x5d362c[_0x5a54cd(0x16f)],'solution':_0x5d362c[_0x5a54cd(0x171)],'details':_0x228259}:(_0x39602a[_0x5a54cd(0x16f)]=_0x228259[_0x5a54cd(0x16f)]||'未知错误',_0x39602a[_0x5a54cd(0x10c)]=_0x228259);}else _0x39602a[_0x5a54cd(0x16f)]=_0x228259[_0x5a54cd(0x16f)]||_0x5a54cd(0xfa),_0x39602a[_0x5a54cd(0x10c)]=_0x228259;}return console['error']('Coze\x20Responese\x20Error\x20error:',_0x228259),console[_0x5a54cd(0x173)](_0x5a54cd(0x141),_0x39602a),_0x39602a;}[a1_0x54f2f0(0xc6)](_0x4f3fd5){const _0x28ca2f=a1_0x54f2f0,_0x3f2dd1=_0x4f3fd5[_0x28ca2f(0x179)]('\x0a')[_0x28ca2f(0xf2)](_0x34f9a5=>!!_0x34f9a5[_0x28ca2f(0xd6)]());return _0x3f2dd1;}['get_part_type'](_0x24ec2d){const _0x168757=a1_0x54f2f0;if(_0x24ec2d[_0x168757(0x185)](_0x168757(0x140))){const _0x21a734=_0x24ec2d[_0x168757(0xf0)](_0x168757(0x140),'')['trim']();return _0x21a734;}else{if(_0x24ec2d[_0x168757(0x185)]('data:'))return _0x168757(0x16a);}return _0x168757(0x166);}[a1_0x54f2f0(0x14b)](_0x336dec){const _0xe75b4d=a1_0x54f2f0;if(!_0x336dec)return null;try{const _0x1b9a7e=JSON[_0xe75b4d(0x17d)](_0x336dec),_0x183734=this[_0xe75b4d(0x11f)](_0x1b9a7e);return{'content':_0x183734['message'],'errInfo':_0x183734};}catch(_0x3982d9){try{if(_0x336dec['startsWith'](_0xe75b4d(0x140)))return null;return JSON['parse'](_0x336dec[_0xe75b4d(0xf0)](_0xe75b4d(0xde),''));}catch(_0x2bd69e){return console[_0xe75b4d(0x173)]('CozeClient\x20get_part_data\x20error:',_0x2bd69e),null;}}}['chcek_is_stream_url'](){const _0x9bff71=a1_0x54f2f0;return this[_0x9bff71(0x120)][this['urlType']]||![];}['set_token'](_0x5138da){this['cozeToken']=_0x5138da;}[a1_0x54f2f0(0x195)](_0x2b3bc4){const _0x3f8aeb=a1_0x54f2f0;return{'content_type':_0x3f8aeb(0xe6),'content':JSON[_0x3f8aeb(0xe3)](_0x2b3bc4)};}[a1_0x54f2f0(0x131)](_0x4d653a){const _0x272d3d=a1_0x54f2f0,_0x1d55c4=a1_0x35c2e2[_0x272d3d(0x14d)](_0x4d653a);return _0x1d55c4[_0x272d3d(0xdd)]&&(_0x1d55c4[_0x272d3d(0xdd)]=this[_0x272d3d(0x137)](_0x1d55c4[_0x272d3d(0xdd)])),_0x1d55c4;}[a1_0x54f2f0(0x137)](_0x6c86f2){const _0x459d6f=a1_0x54f2f0;if(!_0x6c86f2)return{};const _0xc893d9=a1_0x35c2e2[_0x459d6f(0x14d)](_0x6c86f2);return _0xc893d9['extra']&&(_0xc893d9[_0x459d6f(0x13f)]=this[_0x459d6f(0xce)](_0xc893d9[_0x459d6f(0x13f)]),Object[_0x459d6f(0xf5)](_0xc893d9[_0x459d6f(0x13f)])[_0x459d6f(0x162)](([_0x56efe9,_0x5291a3])=>{_0xc893d9[_0x56efe9]=JSON['stringify'](_0x5291a3);}),delete _0xc893d9['extra']),_0xc893d9;}['split_body_extra'](_0x2da1ce){const _0x41b61f=a1_0x54f2f0;if(!_0x2da1ce)return{};const _0x91ea23={};return Object[_0x41b61f(0xf5)](_0x2da1ce)['forEach'](([_0x4f34b1,_0x4aa51c])=>{const _0x3accba=_0x41b61f,_0x50dcc8=a1_0x35c2e2[_0x3accba(0x14d)](_0x4aa51c);switch(_0x4f34b1){case _0x3accba(0x153):_0x91ea23[_0x3accba(0x16d)+_0x4f34b1]=_0x50dcc8===0x0?'个人':'企业';break;default:_0x91ea23['extra_'+_0x4f34b1]=_0x50dcc8;break;}}),{..._0x91ea23};}[a1_0x54f2f0(0xc2)](_0x560880,_0x1a153c,_0x251772){let _0x48fd27=null;const {reasoning_content_random:reasoning_content_random=0x3,content_radom:content_radom=0x3}=_0x251772||{};return new Promise((_0x2f3771,_0x5aaa6d)=>{const _0x15832e=a1_0x3b2b;if(_0x48fd27)clearInterval(_0x48fd27);try{if(!_0x560880||!_0x1a153c)return;let _0x5e8a48=a1_0x35c2e2['deepClone'](_0x1a153c);if(typeof _0x5e8a48==_0x15832e(0xfc))_0x5e8a48=Object[_0x15832e(0xdf)](CozeClient[_0x15832e(0x15c)](),{'type':'','content':_0x5e8a48,'isFinished':![]});const {content:_0x58d71d,reasoning_content:_0x4cdddb,follow_up:_0x14688c,task:_0x19cf31,consume_num:_0x4bf967}=_0x5e8a48,_0x5dc73d=a1_0x35c2e2[_0x15832e(0x14d)](CozeClient[_0x15832e(0xed)]);_0x5dc73d[_0x15832e(0x17f)]=_0x15832e(0x157);let _0x198a1a=_0x58d71d?_0x58d71d['length']:0x0,_0x1670e3=[],_0x311927=_0x4cdddb?_0x4cdddb['length']:0x0,_0x5223e8=[],_0x1434d8=a1_0x35c2e2[_0x15832e(0x14d)](_0x14688c||[]);if(_0x311927){let _0x376c1d=0x0;while(_0x311927>0x0){const _0x468813=Math[_0x15832e(0x190)](Math[_0x15832e(0x184)]()*reasoning_content_random);_0x311927-_0x468813<0x0?(_0x5223e8[_0x15832e(0x194)]({..._0x5dc73d,'reasoning_content':_0x4cdddb?.[_0x15832e(0x139)](_0x376c1d,_0x376c1d+_0x311927),'isFinished':![]}),_0x311927=0x0):(_0x5223e8['push']({..._0x5dc73d,'reasoning_content':_0x4cdddb?.[_0x15832e(0x139)](_0x376c1d,_0x376c1d+_0x468813),'isFinished':![]}),_0x376c1d+=_0x468813,_0x311927-=_0x468813);}}if(_0x198a1a){let _0x1bb564=0x0;while(_0x198a1a>0x0){const _0x1162b9=Math[_0x15832e(0x190)](Math['random']()*content_radom);_0x198a1a-_0x1162b9<0x0?(_0x1670e3[_0x15832e(0x194)]({..._0x5dc73d,'content':_0x58d71d?.[_0x15832e(0x139)](_0x1bb564,_0x1bb564+_0x198a1a),'isFinished':![]}),_0x198a1a=0x0):(_0x1670e3[_0x15832e(0x194)]({..._0x5dc73d,'content':_0x58d71d?.[_0x15832e(0x139)](_0x1bb564,_0x1bb564+_0x1162b9),'isFinished':![]}),_0x1bb564+=_0x1162b9,_0x198a1a-=_0x1162b9);}}_0x48fd27=setInterval(()=>{const _0x3373f1=_0x15832e;if(_0x5223e8[_0x3373f1(0x1a1)])_0x560880(_0x5223e8[_0x3373f1(0x16c)]()||null);else{if(_0x1670e3[_0x3373f1(0x1a1)])_0x560880(_0x1670e3[_0x3373f1(0x16c)]()||null);else{if(_0x1434d8['length'])_0x560880({..._0x5dc73d,'type':_0x3373f1(0x18f),'content':_0x1434d8['shift'](),'isFinished':![]});else{_0x560880({..._0x5dc73d,'type':_0x3373f1(0x152),'task':_0x19cf31,'isFinished':![]}),_0x560880({..._0x5dc73d,'type':_0x3373f1(0x170),'consume_num':_0x4bf967,'isFinished':![]}),_0x560880({'type':'done','isFinished':!![]}),_0x2f3771(!![]);if(_0x48fd27)clearInterval(_0x48fd27);}}}},0x1e);}catch(_0x9013a6){console[_0x15832e(0x173)](_0x15832e(0x106),_0x9013a6);if(_0x48fd27)clearInterval(_0x48fd27);_0x5aaa6d(![]);}});}[a1_0x54f2f0(0x174)](_0x29b518=0x9){const _0x50801c=a1_0x54f2f0,_0x5d58a7=a1_0x35c2e2[_0x50801c(0x14d)](CozeClient[_0x50801c(0x14a)])[String(_0x29b518)];return _0x5d58a7;}static[a1_0x54f2f0(0x15c)](){const _0x3cc63d=a1_0x54f2f0;return a1_0x35c2e2['deepClone'](CozeClient[_0x3cc63d(0xed)]);}async[a1_0x54f2f0(0x113)](_0x2a1dd2){const _0x3c3cc4=a1_0x54f2f0;try{if(!this['is_consume']){_0x2a1dd2(0x0);return;}const _0x299a03=await this[_0x3c3cc4(0xc7)][_0x3c3cc4(0x125)]({'type':this[_0x3c3cc4(0xfe)]});this[_0x3c3cc4(0x12a)]=!![],_0x2a1dd2(_0x299a03[_0x3c3cc4(0xef)]===0x0?this['get_consume_num'](this['consume_id']):0x0);}catch(_0xf15ac9){console[_0x3c3cc4(0x173)]('🚀\x20~\x20CozeClient\x20~\x20consumeIntegral\x20~\x20err:',_0xf15ac9),this[_0x3c3cc4(0x12a)]=!![];}}[a1_0x54f2f0(0x149)](_0xa04e25){const _0x53b9e5=a1_0x54f2f0;if(this[_0x53b9e5(0xd2)]){_0xa04e25&&_0xa04e25(this[_0x53b9e5(0xd2)]);return;}this['tokenLoading']=!![],this[_0x53b9e5(0xc7)]['getToken']()[_0x53b9e5(0x199)](_0x3dd125=>{const _0x43c777=_0x53b9e5;if(_0x3dd125[_0x43c777(0xef)]==0x0){let _0x26d8b3=_0x3dd125[_0x43c777(0x16a)]['access_token'];this['set_token'](_0x26d8b3),this[_0x43c777(0x107)]=![],_0xa04e25&&_0xa04e25(_0x26d8b3);}})[_0x53b9e5(0xe9)](()=>{const _0x118a6b=_0x53b9e5;this[_0x118a6b(0x107)]=![],_0xa04e25&&_0xa04e25(null);});}async[a1_0x54f2f0(0x111)](){const _0x51ec95=a1_0x54f2f0;if(this[_0x51ec95(0xd2)])return this[_0x51ec95(0xd2)];try{let _0x515e8a='';this['tokenLoading']=!![];const _0x3898a5=await this[_0x51ec95(0xc7)][_0x51ec95(0x149)]();return _0x3898a5[_0x51ec95(0xef)]==0x0&&(_0x515e8a=_0x3898a5[_0x51ec95(0x16a)][_0x51ec95(0x124)]),this[_0x51ec95(0x107)]=![],this[_0x51ec95(0x182)](_0x515e8a),_0x515e8a;}catch(_0x2a9916){return console['error'](_0x51ec95(0x165),_0x2a9916),this[_0x51ec95(0x107)]=![],null;}}['createConversation'](_0x4c94ae,_0x529ba8){const _0x229c80=a1_0x54f2f0,{header:header={},data:data={}}=_0x4c94ae||{};if(!this[_0x229c80(0xd2)])return;uni[_0x229c80(0xc7)]({'url':_0x229c80(0x10f),'header':{'content-type':_0x229c80(0x126),'Authorization':_0x229c80(0xc9)+this[_0x229c80(0xd2)],...header},'method':_0x229c80(0x197),'data':{...data},'success':_0x51a95a=>{const _0x1eb552=_0x229c80;let _0x58ce96=_0x51a95a[_0x1eb552(0x16a)];_0x58ce96[_0x1eb552(0xef)]==0x0&&(this[_0x1eb552(0xd8)]=_0x58ce96[_0x1eb552(0x16a)]['id'],_0x529ba8&&_0x529ba8(_0x58ce96['data']['id']));}});}async[a1_0x54f2f0(0x19b)](_0x179b59,_0x5bf1fe){const _0x50cc91=a1_0x54f2f0,{header:header={},data:data={}}=_0x179b59||{};if(!this[_0x50cc91(0xd2)])return;const _0x1fa99e=await uni['request']({'url':_0x50cc91(0x10f),'header':{'content-type':'application/json','Authorization':_0x50cc91(0xc9)+this[_0x50cc91(0xd2)],...header},'method':_0x50cc91(0x197),'data':{...data}});let _0x3a3017=_0x1fa99e[0x1][_0x50cc91(0x16a)];_0x3a3017[_0x50cc91(0xef)]==0x0&&(this[_0x50cc91(0xd8)]=_0x3a3017[_0x50cc91(0x16a)]['id'],_0x5bf1fe&&_0x5bf1fe(data['data']['id']));}}CozeClient[a1_0x54f2f0(0x18a)]={0xfa0:{'message':a1_0x54f2f0(0x188),'solution':'请参考\x20API\x20文档检查请求参数'},0xfa1:{'message':a1_0x54f2f0(0x19e),'solution':a1_0x54f2f0(0x13c)},0xfa2:{'message':a1_0x54f2f0(0xc3),'solution':a1_0x54f2f0(0x187)},0xfa3:{'message':'meta\x20data\x20超过限制','solution':'请参考\x20API\x20文档检查请求参数'},0xfa4:{'message':'additional\x20messages超过限制','solution':a1_0x54f2f0(0xe1)},0xfa5:{'message':a1_0x54f2f0(0x193),'solution':a1_0x54f2f0(0x114)},0xfa6:{'message':a1_0x54f2f0(0x119),'solution':a1_0x54f2f0(0x117)},0xfa7:{'message':a1_0x54f2f0(0x150),'solution':a1_0x54f2f0(0xe8)},0xfa8:{'message':a1_0x54f2f0(0x11b),'solution':a1_0x54f2f0(0x127)},0xfa9:{'message':'已达系统请求上限','solution':a1_0x54f2f0(0xcd)},0xfaa:{'message':a1_0x54f2f0(0x167),'solution':a1_0x54f2f0(0xca)},0xfab:{'message':a1_0x54f2f0(0x147),'solution':a1_0x54f2f0(0xf3)},0xfac:{'message':a1_0x54f2f0(0x19a),'solution':a1_0x54f2f0(0x10a)},0xfad:{'message':a1_0x54f2f0(0x172),'solution':a1_0x54f2f0(0x13d)},0xfae:{'message':'问题无法回答','solution':a1_0x54f2f0(0x12e)},0xfaf:{'message':a1_0x54f2f0(0x19c),'solution':a1_0x54f2f0(0x134)},0xfb0:{'message':'当前会话已有chat在运行','solution':a1_0x54f2f0(0x136)},0xfb3:{'message':a1_0x54f2f0(0x19f),'solution':a1_0x54f2f0(0xcb)},0xfb4:{'message':'火山Bot调用超出RPM峰值','solution':a1_0x54f2f0(0xd7)},0xfb5:{'message':a1_0x54f2f0(0x181),'solution':'请配置工作流后重试'},0xfb6:{'message':a1_0x54f2f0(0x148),'solution':'请及时结清欠款恢复账号'},0x1004:{'message':a1_0x54f2f0(0xe4),'solution':a1_0x54f2f0(0x118)},0x1005:{'message':a1_0x54f2f0(0x11e),'solution':a1_0x54f2f0(0x17e)},0x1006:{'message':'命中风控拦截','solution':a1_0x54f2f0(0x104)},0x1008:{'message':a1_0x54f2f0(0x191),'solution':a1_0x54f2f0(0x100)},0x1009:{'message':'内容包含敏感信息','solution':a1_0x54f2f0(0x198)},0x1068:{'message':a1_0x54f2f0(0x116),'solution':a1_0x54f2f0(0x132)},0x10cc:{'message':a1_0x54f2f0(0xf1),'solution':'请检查文件名称和请求头设置'},0x10cd:{'message':a1_0x54f2f0(0xf7),'solution':a1_0x54f2f0(0x13a)},0x10ce:{'message':a1_0x54f2f0(0x105),'solution':a1_0x54f2f0(0x159)},0x10cf:{'message':a1_0x54f2f0(0x101),'solution':a1_0x54f2f0(0x145)},0x10d0:{'message':a1_0x54f2f0(0x146),'solution':a1_0x54f2f0(0x159)},0x10da:{'message':'未找到执行记录','solution':'建议更换\x20execute_id\x20或\x20workflow_id\x20后重试'},0x10db:{'message':a1_0x54f2f0(0xcf),'solution':a1_0x54f2f0(0xfb)},0x1388:{'message':a1_0x54f2f0(0x12c),'solution':'请稍后重试，持续报错请提交反馈'}},CozeClient[a1_0x54f2f0(0xed)]={'type':'','content':'','reasoning_content':'','error':null,'conversationId':null,'chatId':null,'botId':null,'chatStatus':null,'usage':null,'isStreamFinished':![],'isAccumulateMessage':!![],'follow_up':[],'consume_num':0x0},CozeClient['empty_response']={'code':0x0,'msg':a1_0x54f2f0(0x103),'data':null},CozeClient['empty_promise']=()=>new Promise(_0x3f4fed=>_0x3f4fed(CozeClient[a1_0x54f2f0(0x138)])),CozeClient[a1_0x54f2f0(0x14a)]={'-1':0x0,'9':0x1,'10':0x6,'11':0x1e};function a1_0x3b2b(_0x8cf91,_0x8be748){const _0x486590=a1_0x4865();return a1_0x3b2b=function(_0x3b2b2d,_0x501b9c){_0x3b2b2d=_0x3b2b2d-0xc1;let _0x2120d=_0x486590[_0x3b2b2d];return _0x2120d;},a1_0x3b2b(_0x8cf91,_0x8be748);}function a1_0x4865(){const _0x5f2b96=['string','chatStatus','consume_id','status','确认对话\x20ID\x20和对话状态','不支持的文件类型','466380kkFHAl','success','请稍后重试，持续报错请提交反馈','文件大小超过限制','🚀\x20~\x20CozeClient\x20~\x20simulate_bot_reply\x20~\x20catch\x20~\x20err:','tokenLoading','chat_in_progress','get_part_type','建议更换智能体的模型之后重试','init','details','conversation','init_request','https://api.coze.cn/v1/conversation/create','conversation.message.delta','getTokenSync','workflow.stream_run','consumeIntegral','请检查\x20message\x20id\x20和\x20content\x20后重试','includes','资源未找到','请检查智能体id后重试','请检查个人访问令牌(PAT)后重试','无效的智能体','requestClient','用户限流','node_seq_id','init_url_type','没有权限访问该资源','get_errorinfo','streamUrlTypeMap','handleMPWorkflowRunStreamResponse','reasoning_content','chatId','access_token','postConsume','application/json','请明日再试','urlConfig','requestByWeb','consume_loading','工作流执行失败','服务器内部错误','isEmpty','请更换问题后重试','call','9861830NQQMHw','handle_request_body','建议检查资源\x20ID\x20后重试','botCallback','请参考准备工作完成\x20API\x20调用前的准备工作','4617712WGUciV','请等待对话完成后再发起新的对话','handle_custom_variables','empty_response','slice','建议分批上传','workflowStreamCallback','请检查\x20chat\x20id\x20后重试','建议稍后重试','handleWorkflowRunResponse','extra','event:','Coze\x20Responese\x20Error\x20errorInfo:','chat_completed','STREAM_PROCESS_ERROR','TextDecoder','请参考文档支持的文件类型','文件无效','Coze\x20Token\x20余额不足','模型欠费','getToken','consume_map','get_part_data','botId','deepClone','workflow','CozeClient\x20constructor\x20Error:\x20API\x20type\x20','流false仅在自动保存为true时允许','1994RVnqmp','custom_task','category','statusCode','CozeClient\x20sendMessage\x20Error:\x20Is\x20not\x20authorized.\x20Please\x20authorize\x20first.','toString','message_delta','conversation.chat.completed','建议更换文件后重试','done','🚀\x20~\x20handleRequestByWeixin\x20~\x20fail:','get_stream_state','content','onChunkReceived','requestHandleMap','init_client_options','usage','forEach','isNumber','1649FfLRLC','🚀\x20~\x20CozeClient\x20~\x20getTokenSync\x20~\x20err:','unknown','prompt\x20token\x20数量超过模型上限','workflow.run','chcek_is_stream_url','data','conversation.chat.in_progress','shift','extra_','回答失败，请稍后再试','message','consume_end','solution','模型错误','error','get_consume_num','requestByUniapp','bot.chat','output','bot','split','abort','content_type','check_workflow_is_success','parse','请检查个人访问令牌的权限后重试','type','complete','工作流未配置','set_token','4654006KAfOze','random','startsWith','handleResponse','请检查\x20conversation\x20id\x20后重试','请求参数错误','7665330FgprMd','ERROR_CODES','object','sendMessage','keys','log','message_follow_up','ceil','当前对话不支持取消','get_url','无效的消息','push','get_content_filelist','Message','GET','请检查智能体配置，删除敏感词后重新发布','then','无效模型','createConversationAsync','智能体未发布到API','Bot\x20Stream\x20处理错误:','无效的对话','火山Bot调用按量余额不足','POST','length','🚀\x20~\x20CozeClient\x20~\x20sendMessage\x20~\x20error:','empty_promise','simulate_bot_reply','无效的会话','create','Bot\x20处理错误:','split_decode','request','node_title','Bearer\x20','建议缩短问题长度后重试','请及时充值','init_consume','请稍后重试','split_body_extra','执行已结束','https://api.coze.cn/v1/workflow/run','Done','cozeToken','bot_id','conversation.chat.created','is_consume','trim','请增加\x20RPM\x20的额度','conversation_id','urlType','urlConfigHandleMap','\x20is\x20not\x20supported.','startRequest','custom_variables','data:','assign','stream_run','请参考\x20API\x20文档检查请求参数','errInfo','stringify','身份验证无效','Error','object_string','handleBotResponse','修改请求参数设置，详细说明可参考发起对话','catch','run','text','platform','stream_state','Request\x20failed\x20with\x20status\x20','code','replace','上传文件为空','filter','建议充值后重试','3317925oMtUch','entries','chat_created','文件上传超过一个','Uniapp','848LmPqZb','未知错误','确认工作流\x20ID\x20是否正确'];a1_0x4865=function(){return _0x5f2b96;};return a1_0x4865();}export default CozeClient;
+import util from '../utils';
+class CozeClient {
+    constructor(options) {
+        this.platform = 'MP'; // Wen MP
+        this.request = {
+            postConsume: undefined,
+            getToken: undefined
+        };
+        this.requestHandleMap = {
+            postConsume: (p) => (this.request.postConsume = p || CozeClient.empty_promise),
+            getToken: (p) => (this.request.getToken = p || CozeClient.empty_promise)
+        };
+        this.requestClient = null;
+        this.appid = '';
+        this.secret_key = '';
+        this.urlType = 'bot.chat';
+        this.urlConfig = {
+            token: '',
+            bot: {
+                chat: 'https://api.coze.cn/v3/chat',
+                conversation: {
+                    create: 'https://api.coze.cn/v1/conversation/create'
+                }
+            },
+            workflow: {
+                run: 'https://api.coze.cn/v1/workflow/run',
+                stream_run: 'https://api.coze.cn/v1/workflow/stream_run'
+            }
+        };
+        this.urlConfigHandleMap = {
+            token: (url) => (this.urlConfig.token = url),
+            bot: {
+                chat: (url) => (this.urlConfig.bot.chat = url),
+                conversation: {
+                    create: (url) => (this.urlConfig.bot.conversation.create = url)
+                }
+            },
+            workflow: {
+                run: (url) => (this.urlConfig.workflow.run = url),
+                stream_run: (url) => (this.urlConfig.workflow.stream_run = url)
+            }
+        };
+        this.streamUrlTypeMap = {
+            'bot.chat': true,
+            'workflow.stream_run': true
+        };
+        // token = 'd455c2261c83ac6c60bbb47b09814a4c';
+        this.token = '';
+        this.conversation_id = ''; // 对话 ID
+        this.tokenLoading = false;
+        this.is_consume = true; // 是否消耗积分
+        this.consume_id = 9;
+        this.consume_loading = false; // 等待消耗积分响应
+        this.streamBuffer = ''; // 用于缓冲不完整的SSE消息
+        this.init(options);
+    }
+    // !================================  参数注册区 =================================!
+    init(options) {
+        const { token, // Coze Token
+        urlType = 'bot.chat', // API 类型
+        platform = 'MP', // 平台
+        request, // 请求
+        urlConfig = {}, // API 地址
+        requestClient, appid, secret_key } = options || {};
+        if (!appid || !secret_key) {
+            throw new Error('appid 或 secret_key 不能为空');
+        }
+        if (appid)
+            this.appid = appid;
+        if (secret_key)
+            this.secret_key = secret_key;
+        if (urlConfig)
+            this.init_url_config(urlConfig);
+        if (urlType)
+            this.init_url_type(urlType);
+        if (platform)
+            this.platform = platform;
+        if (token)
+            this.token = token;
+        if (request)
+            this.init_request(request);
+        if (requestClient)
+            this.requestClient = requestClient;
+        this.init_consume(options || {});
+    }
+    // 更新三方接口请求
+    init_request(request) {
+        if (!request)
+            return;
+        const recursion = (data, handle) => {
+            if (!data)
+                return;
+            if (typeof data === 'object') {
+                for (const k in data) {
+                    recursion(data[k], handle[k]);
+                }
+            }
+            if (typeof data === 'function') {
+                handle(data);
+            }
+        };
+        recursion(request, this.requestHandleMap);
+    }
+    // 更新扣子接口地址配置
+    init_url_config(urlConfig) {
+        if (!urlConfig)
+            return;
+        const recursion = (data, handle) => {
+            if (!data)
+                return;
+            if (typeof data === 'object') {
+                for (const k in data) {
+                    recursion(data[k], handle[k]);
+                }
+            }
+            if (typeof data === 'string') {
+                handle(data);
+            }
+        };
+        recursion(urlConfig, this.urlConfigHandleMap);
+    }
+    // 更新接口类型
+    init_url_type(urlType) {
+        if (urlType)
+            this.urlType = urlType;
+    }
+    init_consume(options) {
+        const { consume_id, is_consume } = options;
+        if (consume_id !== undefined &&
+            !util.isEmpty(consume_id) &&
+            util.isNumber(consume_id)) {
+            this.consume_id = consume_id;
+        }
+        else {
+            this.consume_id = 9;
+        }
+        if (!util.isEmpty(is_consume)) {
+            this.is_consume = !!is_consume;
+            // 如果不需要消耗积分，则将消耗积分数量设置为0
+            if (!this.is_consume)
+                this.consume_id = -1;
+        }
+        else {
+            this.is_consume = true;
+        }
+    }
+    init_client_options(options) {
+        if (options.urlType)
+            this.init_url_type(options.urlType);
+        this.init_consume({
+            consume_id: util.isEmpty(options.consume_id) ? 9 : options.consume_id,
+            is_consume: util.isEmpty(options.is_consume) ? true : options.is_consume
+        });
+    }
+    // 更新请求地址
+    get_url() {
+        const urlRoutes = this.urlType.split('.');
+        let url = util.deepClone(this.urlConfig); // deep clone
+        for (let i = 0; i < urlRoutes.length; i++) {
+            if (!url[urlRoutes[i]]) {
+                throw new Error(`CozeClient constructor Error: API type ${urlRoutes[i]} is not supported.`);
+            }
+            url = url[urlRoutes[i]];
+        }
+        return url;
+    }
+    // !================================  主功能区 =================================!
+    // ? 发送消息  ==================================
+    sendMessage(options) {
+        if (!this.token) {
+            throw new Error('CozeClient sendMessage Error: Not have token , pleace request the token.');
+        }
+        const { 
+        // body, // 非必需
+        params, // 非必需
+        callback = () => { }, // 必需
+        clientOptions = {} // 非必需
+         } = options || {};
+        this.init_client_options(clientOptions);
+        let url = this.get_url();
+        if (params) {
+            // 如果params存在，则将其添加到url中
+            const urlParams = util.URLSearchParams(params);
+            url += `?${urlParams.toString()}`;
+        }
+        try {
+            return this.startRequest(url, options);
+        }
+        catch (error) {
+            console.error('🚀 ~ CozeClient ~ sendMessage ~ error:', error);
+            const errorInfo = this.get_errorinfo(error);
+            callback({
+                type: 'error',
+                content: '',
+                error: errorInfo,
+                isFinished: true
+            });
+            return null;
+        }
+    }
+    // ? 请求接口  ==================================
+    // 根据接口类型，选择接口调用
+    startRequest(url, options) {
+        // @ts-ignore
+        const requestTask = this['request' + 'By' + this.platform](Object.assign({
+            url
+        }, options));
+        return requestTask;
+    }
+    // H5使用fetch进行请求处理
+    async requestByWeb(options) {
+        const { url, body, header, callback = () => { } } = options || {};
+        const chcek_is_stream_url = this.chcek_is_stream_url(); // 判断是否实流式回复
+        if (chcek_is_stream_url) {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${this.token}`,
+                    ...(header || {})
+                },
+                body: JSON.stringify(this.handle_request_body(body))
+            });
+            if (!response.ok) {
+                throw new Error(`CozeClient requestByWeb Error: ${response.statusText}`);
+            }
+            const reader = response.body?.getReader();
+            const decoder = new TextDecoder('utf-8');
+            // uni.hideLoading();
+            const handleResponse = this.handleWebResponse();
+            if (handleResponse) {
+                // @ts-ignore
+                handleResponse.call(this, reader, decoder, callback);
+            }
+            else {
+                throw new Error('CozeApiClient sendMessage Error: No handleResponse function found for the API type.');
+            }
+            return response;
+        }
+        else {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${this.token}`
+                },
+                body: JSON.stringify(this.handle_request_body(body))
+            });
+            if (!response.ok) {
+                throw new Error(`CozeClient requestByWeb Error: ${response.statusText}`);
+            }
+            const handleResponse = this.handleWebResponse();
+            if (handleResponse) {
+                // @ts-ignore
+                handleResponse.call(this, response, callback);
+            }
+            else {
+                throw new Error('CozeApiClient sendMessage Error: No handleResponse function found for the API type.');
+            }
+            return response;
+        }
+    }
+    // 小程序使用Request进行请求处理
+    requestByMP(options) {
+        const { url, body, callback = () => { } } = options || {};
+        const chcek_is_stream_url = this.chcek_is_stream_url(); // 判断是否实流式回复
+        if (chcek_is_stream_url) {
+            const requestTask = uni.request({
+                url: url,
+                method: 'POST',
+                header: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${this.token}`
+                },
+                data: JSON.stringify(this.handle_request_body(body)),
+                enableChunked: true, // 开启分块传输
+                success: (res) => {
+                    if (res.statusCode !== 200 || res.data.code !== 0) {
+                        callback({
+                            type: 'error',
+                            content: '回答失败，请稍后再试',
+                            error: new Error(`Request failed with status ${res.statusCode}`),
+                            isFinished: true
+                        });
+                    }
+                    else {
+                        const handleConsumeEnd = (consume_num) => {
+                            callback({
+                                type: 'consume_end',
+                                consume_num,
+                                isFinished: true
+                            });
+                        };
+                        this.consumeIntegral(handleConsumeEnd);
+                    }
+                },
+                fail: (err) => {
+                    console.error('🚀 ~ handleRequestByWeixin ~ fail:', err);
+                    callback({
+                        type: 'error',
+                        error: err,
+                        isFinished: true
+                    });
+                }
+            });
+            // 监听数据块接收事件
+            requestTask.onChunkReceived((res) => {
+                try {
+                    // 将ArrayBuffer转换为字符串
+                    const decode = util.TextDecoder(new Uint8Array(res.data));
+                    if (!decode)
+                        return;
+                    const handleResponse = this.handleMPResponse();
+                    if (handleResponse) {
+                        // @ts-ignore
+                        handleResponse.call(this, decode, callback);
+                    }
+                    else {
+                        throw new Error('CozeClient sendMessage Error: No handleResponse function found for the API type.');
+                    }
+                }
+                catch (error) {
+                    console.error('🚀 ~ onChunkReceived ~ error:', error);
+                    console.error('🚀 ~ onChunkReceived ~ error:', res);
+                    requestTask.abort(); // 终止请求
+                    callback({
+                        content: '回复失败，请稍后再试',
+                        type: 'error',
+                        error: error,
+                        isFinished: true
+                    });
+                }
+            });
+            // 监听请求完成事件
+            requestTask.onHeadersReceived((res) => { });
+            return requestTask;
+        }
+        else {
+            uni.request({
+                url: url,
+                method: 'POST',
+                header: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${this.token}`
+                },
+                data: JSON.stringify(body),
+                success: (res) => {
+                    if (res.statusCode !== 200) {
+                        callback({
+                            type: 'error',
+                            error: new Error(`Request failed with status ${res.statusCode}`),
+                            isFinished: true
+                        });
+                    }
+                    else {
+                        const is_success = this.check_workflow_is_success(res);
+                        if (is_success) {
+                            const handleConsumeEnd = (consume_num) => {
+                                const n_callback = (data) => {
+                                    callback({
+                                        type: 'consume_end',
+                                        data,
+                                        consume_num,
+                                        isFinished: true
+                                    });
+                                };
+                                // @ts-ignore
+                                this.handleMPResponse()?.call(this, res, n_callback);
+                            };
+                            this.consumeIntegral(handleConsumeEnd);
+                        }
+                        else {
+                            const n_callback = (data) => {
+                                callback({
+                                    type: 'consume_end',
+                                    data,
+                                    consume_num: 0,
+                                    isFinished: true
+                                });
+                            };
+                            // @ts-ignore
+                            this.handleMPResponse()?.call(this, res, n_callback);
+                        }
+                    }
+                },
+                fail: (err) => {
+                    console.error('🚀 ~ handleRequestByWeixin ~ fail:', err);
+                    callback({
+                        type: 'error',
+                        error: err,
+                        isFinished: true
+                    });
+                }
+            });
+            return null;
+        }
+    }
+    // ? 接口响应处理  ==================================
+    // 获取web端对应的响应处理函数
+    handleWebResponse() {
+        if (this.platform == 'Web') {
+            switch (this.urlType) {
+                case 'bot.chat':
+                    return this.handleWebBotResponse;
+                case 'workflow.run':
+                    return this.handleWorkflowRunResponse;
+                case 'workflow.stream_run':
+                    return this.handleWebWorkflowRunStream;
+                default:
+                    return null;
+            }
+        }
+        return null;
+    }
+    // 获取小程序端对应的响应处理函数
+    handleMPResponse() {
+        if (this.platform == 'MP') {
+            switch (this.urlType) {
+                case 'bot.chat':
+                    return this.handleMPBotResponse;
+                case 'workflow.run':
+                    return this.handleWorkflowRunResponse;
+                case 'workflow.stream_run':
+                    return this.handleMPWorkflowRunStreamResponse;
+                default:
+                    return null;
+            }
+        }
+        return null;
+    }
+    // ? web端 接口响应处理  ==============
+    // web  bot回复处理
+    async handleWebBotResponse(reader, decoder, callback) {
+        let state = CozeClient.get_stream_state();
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) {
+                // 处理剩余缓冲区中的数据
+                if (this.streamBuffer.trim()) {
+                    const parts = this.split_decode(this.streamBuffer);
+                    this.botWebCallback(state, parts, callback);
+                }
+                this.streamBuffer = ''; // 清空缓冲区
+                state.isStreamFinished = true;
+                callback &&
+                    callback({
+                        ...state,
+                        isFinished: true
+                    });
+                break;
+            }
+            const decode = decoder.decode(value, { stream: true });
+            if (!decode)
+                continue;
+            // 将解码的数据添加到缓冲区
+            this.streamBuffer += decode;
+            // 检查缓冲区中是否有完整的SSE消息（以 \n\n 分隔）
+            const messages = this.streamBuffer.split('\n\n');
+            // 如果最后一个元素不为空，说明消息不完整，继续累积
+            if (messages[messages.length - 1] !== '') {
+                continue;
+            }
+            // 处理完整的消息（除了最后一个空元素）
+            for (let i = 0; i < messages.length - 1; i++) {
+                const message = messages[i];
+                if (message.trim()) {
+                    const parts = this.split_decode(message);
+                    this.botWebCallback(state, parts, callback);
+                }
+            }
+            // 将剩余的不完整消息保留在缓冲区
+            this.streamBuffer = messages[messages.length - 1];
+        }
+    }
+    // web  工作流流式回复处理
+    async handleWebWorkflowRunStream(reader, decoder, callback) {
+        let state = CozeClient.get_stream_state();
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) {
+                state.isStreamFinished = true;
+                break;
+            }
+            const decode = decoder.decode(value, { stream: true });
+            if (!decode)
+                continue;
+            this.workflowStreamCallback(state, decode, callback);
+        }
+    }
+    // ? 小程序端 接口响应处理  ==============
+    // 小程序智能体回复处理
+    async handleMPBotResponse(decode, callback) {
+        let state = CozeClient.get_stream_state();
+        try {
+            this.botMPCallback(state, decode, callback);
+        }
+        catch (error) {
+            console.error('Bot 处理错误:', error);
+            callback({
+                type: 'error',
+                error: {
+                    // @ts-ignore
+                    message: error?.message || '',
+                    code: 'STREAM_PROCESS_ERROR'
+                },
+                isFinished: false
+            });
+        }
+    }
+    // 小程序工作流流式回复处理
+    async handleMPWorkflowRunStreamResponse(decode, callback) {
+        let state = CozeClient.get_stream_state();
+        try {
+            this.workflowStreamCallback(state, decode, callback);
+        }
+        catch (error) {
+            console.error('Bot Stream 处理错误:', error);
+            callback({
+                ...state,
+                type: 'error',
+                // @ts-ignore
+                content: error?.message || '',
+                isFinished: false
+            });
+        }
+    }
+    // ? 多端 非流式接口响应处理  ==============
+    // 工作流非响应式回复处理
+    async handleWorkflowRunResponse(response, callback) {
+        let data = response.data; // 从响应中获取数据部分
+        if (data.code == 0) {
+            // 检查响应状态码是否为0（成功）
+            let workflowResponseData = JSON.parse(data.data); // 解析数据中的JSON字符串
+            callback && callback(workflowResponseData); // 如果回调函数存在，则调用它并传递解析后的数据
+        }
+        else {
+            // 处理响应状态码不为0的情况
+            callback && callback(null);
+        }
+    }
+    // ? 接口响应回调处理  ==================================
+    // 处理bot的decode并执行callback
+    async botMPCallback(state, decode, callback) {
+        const parts = this.split_decode(decode);
+        console.log('botMPCallback,parts', decode, parts);
+        let eventType = null;
+        for (const part of parts) {
+            if (!part.trim())
+                continue;
+            const data = this.get_part_data(part);
+            if (!data) {
+                eventType = this.get_part_type(part); // 如果当前流式数据存在内容类型，则获取其类型 一份流式数据由内容类型以及内容两部分组成
+                continue;
+            }
+            // 更新会话状态信息
+            state.chatId = data.id;
+            state.conversationId = data.conversation_id;
+            state.botId = data.bot_id;
+            state.chatStatus = data.status;
+            state.usage = data.usage;
+            // 当流式回复返回的数据结构为JSON数据时，才会存在errInfo
+            if (data.errInfo) {
+                return callback({
+                    ...state,
+                    type: 'error',
+                    isFinished: true,
+                    content: data.errInfo.message
+                });
+            }
+            switch (eventType) {
+                case 'conversation.chat.created':
+                    callback({
+                        ...state,
+                        type: 'chat_created',
+                        isFinished: false
+                    });
+                    break;
+                case 'conversation.chat.in_progress':
+                    callback({
+                        ...state,
+                        type: 'chat_in_progress',
+                        isFinished: false
+                    });
+                    break;
+                case 'event:conversation.chat.failed':
+                    callback({
+                        ...state,
+                        type: 'chat_failed',
+                        content: data.last_error?.msg || '回复失败，请稍后再试',
+                        isFinished: true
+                    });
+                    break;
+                case 'conversation.chat.completed':
+                    callback({
+                        ...state,
+                        type: 'chat_completed',
+                        isFinished: false
+                    });
+                    break;
+                case 'conversation.message.delta':
+                    if (data.content_type === 'text') {
+                        if (data.reasoning_content) {
+                            state.reasoning_content = data.reasoning_content || '';
+                        }
+                        else {
+                            state.content = data.content || '';
+                        }
+                    }
+                    callback({
+                        ...state,
+                        type: 'message_delta',
+                        isFinished: false
+                    });
+                    break;
+                case 'conversation.message.completed':
+                    if (data.type === 'follow_up') {
+                        callback({
+                            ...state,
+                            type: 'message_follow_up',
+                            content: data.content,
+                            isFinished: false
+                        });
+                    }
+                    else {
+                        callback({
+                            ...state,
+                            type: 'message_completed',
+                            isFinished: false
+                        });
+                    }
+                    break;
+                case 'done':
+                    state.isStreamFinished = true;
+                    // 提前展示消耗的积分数量，在流式回复处理完后，才会调用算力积分扣除接口
+                    callback({
+                        ...state,
+                        type: 'consume_end',
+                        consume_num: this.get_consume_num(this.consume_id),
+                        isFinished: false
+                    });
+                    callback({
+                        ...state,
+                        type: 'done',
+                        isFinished: true
+                    });
+                    break;
+                case 'error':
+                    callback({
+                        ...state,
+                        type: 'error',
+                        isFinished: true
+                    });
+                    break;
+            }
+        }
+    }
+    async botWebCallback(state, parts, callback) {
+        console.log('botWebCallback,parts', parts);
+        let eventType = null;
+        for (const part of parts) {
+            if (!part.trim())
+                continue;
+            const data = this.get_part_data(part);
+            if (!data) {
+                eventType = this.get_part_type(part); // 如果当前流式数据存在内容类型，则获取其类型 一份流式数据由内容类型以及内容两部分组成
+                continue;
+            }
+            // 更新会话状态信息
+            state.chatId = data.id;
+            state.conversationId = data.conversation_id;
+            state.botId = data.bot_id;
+            state.chatStatus = data.status;
+            state.usage = data.usage;
+            // 当流式回复返回的数据结构为JSON数据时，才会存在errInfo
+            if (data.errInfo) {
+                return callback({
+                    ...state,
+                    type: 'error',
+                    isFinished: true,
+                    content: data.errInfo.message
+                });
+            }
+            switch (eventType) {
+                case 'conversation.chat.created':
+                    callback({
+                        ...state,
+                        type: 'chat_created',
+                        isFinished: false
+                    });
+                    break;
+                case 'conversation.chat.in_progress':
+                    callback({
+                        ...state,
+                        type: 'chat_in_progress',
+                        isFinished: false
+                    });
+                    break;
+                case 'event:conversation.chat.failed':
+                    callback({
+                        ...state,
+                        type: 'chat_failed',
+                        content: data.last_error?.msg || '回复失败，请稍后再试',
+                        isFinished: true
+                    });
+                    break;
+                case 'conversation.chat.completed':
+                    callback({
+                        ...state,
+                        type: 'chat_completed',
+                        isFinished: false
+                    });
+                    break;
+                case 'conversation.message.delta':
+                    if (data.content_type === 'text') {
+                        if (data.reasoning_content) {
+                            state.reasoning_content = data.reasoning_content || '';
+                        }
+                        else {
+                            state.content = data.content || '';
+                        }
+                    }
+                    callback({
+                        ...state,
+                        type: 'message_delta',
+                        isFinished: false
+                    });
+                    break;
+                case 'conversation.message.completed':
+                    if (data.type === 'follow_up') {
+                        callback({
+                            ...state,
+                            type: 'message_follow_up',
+                            content: data.content,
+                            isFinished: false
+                        });
+                    }
+                    else {
+                        callback({
+                            ...state,
+                            type: 'message_completed',
+                            isFinished: false
+                        });
+                    }
+                    break;
+                case 'done':
+                    state.isStreamFinished = true;
+                    // 提前展示消耗的积分数量，在流式回复处理完后，才会调用算力积分扣除接口
+                    callback({
+                        ...state,
+                        type: 'consume_end',
+                        consume_num: this.get_consume_num(this.consume_id),
+                        isFinished: false
+                    });
+                    callback({
+                        ...state,
+                        type: 'done',
+                        isFinished: true
+                    });
+                    break;
+                case 'error':
+                    callback({
+                        ...state,
+                        type: 'error',
+                        isFinished: true
+                    });
+                    break;
+            }
+        }
+    }
+    // 处理workflowStream的decode并执行callback
+    async workflowStreamCallback(state, decode, callback) {
+        const parts = this.split_decode(decode);
+        let eventType = null;
+        for (const part of parts) {
+            if (!part.trim())
+                continue;
+            const data = this.get_part_data(part);
+            if (!data) {
+                eventType = this.get_part_type(part); // 如果当前流式数据为内容类型，则获取其类型
+                continue;
+            }
+            if (data.errInfo) {
+                return callback({
+                    ...state,
+                    type: 'done',
+                    isFinished: true,
+                    content: data.errInfo.message
+                });
+            }
+            switch (eventType) {
+                case 'Message':
+                    // 处理消息事件
+                    if (data.content) {
+                        // 尝试解析可能的 JSON 内容
+                        let messageContent = data.content;
+                        try {
+                            const jsonContent = JSON.parse(messageContent);
+                            if (jsonContent.output) {
+                                // 如果是最后的汇总消息，跳过
+                                continue;
+                            }
+                        }
+                        catch (e) {
+                            // 不是 JSON，使用原始内容
+                        }
+                        state.content = messageContent;
+                        callback({
+                            ...state,
+                            type: 'message',
+                            content: state.content,
+                            delta: messageContent,
+                            nodeId: data.node_seq_id,
+                            nodeTitle: data.node_title,
+                            isFinished: data.node_is_finish
+                        });
+                    }
+                    break;
+                case 'Done':
+                    callback({
+                        ...state,
+                        type: 'consume_end',
+                        consume_num: this.get_consume_num(this.consume_id),
+                        isFinished: false
+                    });
+                    // 处理完成事件
+                    callback({
+                        ...state,
+                        type: 'complete',
+                        content: state.content,
+                        isFinished: true,
+                        isStreamFinished: true
+                    });
+                    break;
+                case 'Error':
+                    callback({
+                        ...state,
+                        type: 'error',
+                        content: '工作流执行失败',
+                        isFinished: true
+                    });
+                    break;
+            }
+        }
+    }
+    // !================================  工具区 =================================!
+    check_workflow_is_success(response) {
+        let data = response.data; // 从响应中获取数据部分
+        if (data.code == 0) {
+            let workflow_response = JSON.parse(data.data); // 解析数据中的JSON字符串
+            const is_has_success = Object.keys(workflow_response).includes('success');
+            if (is_has_success && workflow_response.success === false) {
+                return false;
+            }
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    // 错误处理方法
+    get_errorinfo(error) {
+        let errorInfo = {
+            code: 5000, // 默认服务器错误
+            message: '未知错误',
+            solution: '请稍后重试',
+            details: null
+        };
+        if (typeof error === 'object') {
+            // API 错误响应
+            if (error.code) {
+                const errorData = CozeClient.ERROR_CODES[error.code];
+                if (errorData) {
+                    errorInfo = {
+                        code: error.code,
+                        message: error.msg || errorData.message,
+                        solution: errorData.solution,
+                        details: error
+                    };
+                }
+                else {
+                    errorInfo.message = error.message || '未知错误';
+                    errorInfo.details = error;
+                }
+            }
+            // // #ifdef H5
+            // // fetch 请求错误
+            // else if (error instanceof Response) {
+            //   errorInfo.code = error.status;
+            //   errorInfo.message = error.statusText;
+            //   errorInfo.details = error;
+            // }
+            // // #endif
+            // 其他错误
+            else {
+                errorInfo.message = error.message || '未知错误';
+                errorInfo.details = error;
+            }
+        }
+        // 打印错误信息方便调试
+        console.error('Coze Responese Error error:', error);
+        console.error('Coze Responese Error errorInfo:', errorInfo);
+        return errorInfo;
+    }
+    // 分割每一段的流式回复
+    split_decode(decode) {
+        const parts = decode.split('\n').filter(part => !!part.trim());
+        return parts;
+    }
+    /**
+     * 事件类型检查
+     * */
+    get_part_type(part) {
+        if (part.startsWith('event:')) {
+            const eventType = part.replace('event:', '').trim();
+            return eventType;
+        }
+        else if (part.startsWith('data:')) {
+            return 'data';
+        }
+        return 'unknown';
+    }
+    // 获取数据部分的对象
+    get_part_data(part) {
+        if (!part)
+            return null;
+        try {
+            const res = JSON.parse(part);
+            // 如果能序列化，表示流式接口返回的是 JSON 对象
+            // 同时也说明接口返回的是报错信息
+            const errInfo = this.get_errorinfo(res);
+            return { content: errInfo.message, errInfo };
+        }
+        catch (error) {
+            try {
+                if (part.startsWith('event:'))
+                    return null;
+                return JSON.parse(part.replace('data:', ''));
+            }
+            catch (error2) {
+                console.error('CozeClient get_part_data error:', error2);
+                return null;
+            }
+        }
+    }
+    // 判断api接口是否需要流式处理
+    chcek_is_stream_url() {
+        return this.streamUrlTypeMap[this.urlType] || false;
+    }
+    // 设置token
+    set_token(token) {
+        this.token = token;
+    }
+    // 根据fileList，输出content_type为object_string的EnterMessage Object
+    get_content_filelist(fileList) {
+        return {
+            content_type: 'object_string',
+            content: JSON.stringify(fileList)
+        };
+    }
+    // 接口参数处理
+    handle_request_body(body) {
+        const n_body = util.deepClone(body);
+        if (n_body.custom_variables) {
+            n_body.custom_variables = this.handle_custom_variables(n_body.custom_variables);
+        }
+        return n_body;
+    }
+    handle_custom_variables(custom_variables) {
+        if (!custom_variables)
+            return {};
+        const n_custom_variables = util.deepClone(custom_variables);
+        // 解构用户的extra数据到body中
+        if (n_custom_variables.extra) {
+            n_custom_variables.extra = this.split_body_extra(n_custom_variables.extra);
+            Object.entries(n_custom_variables.extra).forEach(([key, value]) => {
+                n_custom_variables[key] = JSON.stringify(value);
+            });
+            // 删除原extra参数
+            delete n_custom_variables.extra;
+        }
+        return n_custom_variables;
+    }
+    split_body_extra(extra) {
+        if (!extra)
+            return {};
+        const n_extra = {};
+        Object.entries(extra).forEach(([key, value]) => {
+            const n_value = util.deepClone(value);
+            switch (key) {
+                case 'category':
+                    n_extra['extra_' + key] = n_value === 0 ? '个人' : '企业';
+                    break;
+                default:
+                    n_extra['extra_' + key] = n_value;
+                    break;
+            }
+        });
+        return {
+            ...n_extra
+        };
+    }
+    // 模拟AI回复输出
+    simulate_bot_reply(callback, origin_message, options) {
+        let timer = null;
+        const { reasoning_content_random = 3, content_radom = 3 } = options || {};
+        return new Promise((resolve, reject) => {
+            if (timer)
+                clearInterval(timer);
+            try {
+                if (!callback || !origin_message)
+                    return;
+                let message = util.deepClone(origin_message);
+                if (typeof message == 'string')
+                    message = Object.assign(CozeClient.get_stream_state(), {
+                        type: '',
+                        content: message,
+                        isFinished: false
+                    });
+                const { content, reasoning_content, follow_up, task, consume_num } = message;
+                const state = util.deepClone(CozeClient.stream_state);
+                state.type = 'message_delta';
+                let content_len = content ? content.length : 0;
+                let content_list = [];
+                let reasoning_content_len = reasoning_content
+                    ? reasoning_content.length
+                    : 0;
+                let reasoning_content_list = [];
+                let n_follow_up = util.deepClone(follow_up || []);
+                if (reasoning_content_len) {
+                    let idx = 0;
+                    while (reasoning_content_len > 0) {
+                        const len = Math.ceil(Math.random() * reasoning_content_random);
+                        if (reasoning_content_len - len < 0) {
+                            reasoning_content_list.push({
+                                ...state,
+                                reasoning_content: reasoning_content?.slice(idx, idx + reasoning_content_len),
+                                isFinished: false
+                            });
+                            reasoning_content_len = 0;
+                        }
+                        else {
+                            reasoning_content_list.push({
+                                ...state,
+                                reasoning_content: reasoning_content?.slice(idx, idx + len),
+                                isFinished: false
+                            });
+                            idx += len;
+                            reasoning_content_len -= len;
+                        }
+                    }
+                }
+                if (content_len) {
+                    let idx = 0;
+                    while (content_len > 0) {
+                        const len = Math.ceil(Math.random() * content_radom);
+                        if (content_len - len < 0) {
+                            content_list.push({
+                                ...state,
+                                content: content?.slice(idx, idx + content_len),
+                                isFinished: false
+                            });
+                            content_len = 0;
+                        }
+                        else {
+                            content_list.push({
+                                ...state,
+                                content: content?.slice(idx, idx + len),
+                                isFinished: false
+                            });
+                            idx += len;
+                            content_len -= len;
+                        }
+                    }
+                }
+                timer = setInterval(() => {
+                    if (reasoning_content_list.length) {
+                        callback(reasoning_content_list.shift() || null);
+                    }
+                    else if (content_list.length) {
+                        callback(content_list.shift() || null);
+                    }
+                    else if (n_follow_up.length) {
+                        callback({
+                            ...state,
+                            type: 'message_follow_up',
+                            content: n_follow_up.shift(),
+                            isFinished: false
+                        });
+                    }
+                    else {
+                        callback({
+                            ...state,
+                            type: 'custom_task',
+                            task,
+                            isFinished: false
+                        });
+                        callback({
+                            ...state,
+                            type: 'consume_end',
+                            consume_num,
+                            isFinished: false
+                        });
+                        callback({
+                            type: 'done',
+                            isFinished: true
+                        });
+                        resolve(true);
+                        if (timer)
+                            clearInterval(timer);
+                    }
+                }, 30);
+            }
+            catch (err) {
+                console.error('🚀 ~ CozeClient ~ simulate_bot_reply ~ catch ~ err:', err);
+                if (timer)
+                    clearInterval(timer);
+                reject(false);
+            }
+        });
+    }
+    get_consume_num(consume_id = 9) {
+        const consume_num = util.deepClone(CozeClient.consume_map)[String(consume_id)];
+        return consume_num;
+    }
+    static get_stream_state() {
+        return util.deepClone(CozeClient.stream_state);
+    }
+    // !================================  接口调用区 =================================!
+    // 扣除用户积分
+    async consumeIntegral(handleConsumeEnd) {
+        handleConsumeEnd(this.get_consume_num(this.consume_id));
+        // try {
+        //   if (!this.is_consume) {
+        //     handleConsumeEnd(0);
+        //     return;
+        //   }
+        //   const res = await this.request.postConsume?.({
+        //     type: this.consume_id
+        //   });
+        //   this.consume_loading = true;
+        //   handleConsumeEnd(
+        //     res && res.code === 0 ? this.get_consume_num(this.consume_id) : 0
+        //   );
+        // } catch (err) {
+        //   console.error('🚀 ~ CozeClient ~ consumeIntegral ~ err:', err);
+        //   this.consume_loading = true;
+        // }
+    }
+    // 更新扣子API请求所需的token 异步
+    getToken() {
+        return new Promise((resolve, reject) => {
+            if (this.token) {
+                resolve(this.token);
+            }
+            else {
+                this.tokenLoading = true;
+                uni.request({
+                    url: this.urlConfig.token,
+                    method: 'POST',
+                    dataType: 'json',
+                    header: {
+                        'content-type': 'application/json'
+                        // 'platform': 'mini-weixin'
+                    },
+                    data: {
+                        appid: this.appid,
+                        secret_key: this.secret_key
+                    },
+                    success: (res) => {
+                        if (res.statusCode == 200 && res.data.code == 0) {
+                            let token = res.data?.data?.access_token;
+                            this.set_token(token);
+                        }
+                        resolve(res);
+                    },
+                    fail: (err) => {
+                        reject(err);
+                    },
+                    complated: () => {
+                        this.tokenLoading = false;
+                    }
+                });
+            }
+        });
+    }
+    // 创建会话
+    createConversation(options) {
+        return new Promise((resolve, reject) => {
+            try {
+                const { header = {}, data = {} } = options || {};
+                if (!this.token) {
+                    resolve(null);
+                    return;
+                }
+                uni.request({
+                    url: this.urlConfig.bot.conversation.create,
+                    header: {
+                        'content-type': 'application/json',
+                        'Authorization': 'Bearer ' + this.token,
+                        ...header
+                    },
+                    method: 'POST',
+                    data: {
+                        // bot_id: this.bot.bot_id,
+                        ...data
+                    },
+                    success: (res) => {
+                        let data = res.data;
+                        if (data && data.code == 0) {
+                            this.conversation_id = data.data.id;
+                            resolve(data.data);
+                        }
+                        else {
+                            resolve(null);
+                        }
+                    },
+                    fail: (err) => {
+                        console.error('🚀 ~ CozeClient ~ createConversation ~ err:', err);
+                        resolve(null);
+                    }
+                });
+            }
+            catch (err) {
+                console.error('🚀 ~ CozeClient ~ createConversation ~ err:', err);
+                resolve(null);
+            }
+        });
+    }
+}
+// Coze API 错误码映射
+CozeClient.ERROR_CODES = {
+    // 请求参数错误 4000-4099
+    4000: {
+        message: '请求参数错误',
+        solution: '请参考 API 文档检查请求参数'
+    },
+    4001: {
+        message: '无效的对话',
+        solution: '请检查 chat id 后重试'
+    },
+    4002: {
+        message: '无效的会话',
+        solution: '请检查 conversation id 后重试'
+    },
+    4003: {
+        message: 'meta data 超过限制',
+        solution: '请参考 API 文档检查请求参数'
+    },
+    4004: {
+        message: 'additional messages超过限制',
+        solution: '请参考 API 文档检查请求参数'
+    },
+    4005: {
+        message: '无效的消息',
+        solution: '请检查 message id 和 content 后重试'
+    },
+    4006: {
+        message: '无效的智能体',
+        solution: '请检查智能体id后重试'
+    },
+    4007: {
+        message: '流false仅在自动保存为true时允许',
+        solution: '修改请求参数设置，详细说明可参考发起对话'
+    },
+    4008: {
+        message: '用户限流',
+        solution: '请明日再试'
+    },
+    4009: {
+        message: '已达系统请求上限',
+        solution: '请稍后重试'
+    },
+    4010: {
+        message: 'prompt token 数量超过模型上限',
+        solution: '建议缩短问题长度后重试'
+    },
+    4011: {
+        message: 'Coze Token 余额不足',
+        solution: '建议充值后重试'
+    },
+    4012: {
+        message: '无效模型',
+        solution: '建议更换智能体的模型之后重试'
+    },
+    4013: {
+        message: '模型错误',
+        solution: '建议稍后重试'
+    },
+    4014: {
+        message: '问题无法回答',
+        solution: '请更换问题后重试'
+    },
+    4015: {
+        message: '智能体未发布到API',
+        solution: '请参考准备工作完成 API 调用前的准备工作'
+    },
+    4016: {
+        message: '当前会话已有chat在运行',
+        solution: '请等待对话完成后再发起新的对话'
+    },
+    4019: {
+        message: '火山Bot调用按量余额不足',
+        solution: '请及时充值'
+    },
+    4020: {
+        message: '火山Bot调用超出RPM峰值',
+        solution: '请增加 RPM 的额度'
+    },
+    4021: {
+        message: '工作流未配置',
+        solution: '请配置工作流后重试'
+    },
+    4022: {
+        message: '模型欠费',
+        solution: '请及时结清欠款恢复账号'
+    },
+    // 认证和权限错误 4100-4199
+    4100: {
+        message: '身份验证无效',
+        solution: '请检查个人访问令牌(PAT)后重试'
+    },
+    4101: {
+        message: '没有权限访问该资源',
+        solution: '请检查个人访问令牌的权限后重试'
+    },
+    4102: {
+        message: '命中风控拦截',
+        solution: '请稍后重试，持续报错请提交反馈'
+    },
+    4104: {
+        message: '当前对话不支持取消',
+        solution: '确认对话 ID 和对话状态'
+    },
+    4105: {
+        message: '内容包含敏感信息',
+        solution: '请检查智能体配置，删除敏感词后重新发布'
+    },
+    // 资源错误 4200-4299
+    4200: {
+        message: '资源未找到',
+        solution: '建议检查资源 ID 后重试'
+    },
+    // 文件操作错误 4300-4399
+    4300: {
+        message: '上传文件为空',
+        solution: '请检查文件名称和请求头设置'
+    },
+    4301: {
+        message: '文件上传超过一个',
+        solution: '建议分批上传'
+    },
+    4302: {
+        message: '文件大小超过限制',
+        solution: '建议更换文件后重试'
+    },
+    4303: {
+        message: '不支持的文件类型',
+        solution: '请参考文档支持的文件类型'
+    },
+    4304: {
+        message: '文件无效',
+        solution: '建议更换文件后重试'
+    },
+    4314: {
+        message: '未找到执行记录',
+        solution: '建议更换 execute_id 或 workflow_id 后重试'
+    },
+    4315: {
+        message: '执行已结束',
+        solution: '确认工作流 ID 是否正确'
+    },
+    // 服务器错误 5000-5999
+    5000: {
+        message: '服务器内部错误',
+        solution: '请稍后重试，持续报错请提交反馈'
+    }
+};
+CozeClient.stream_state = {
+    type: '',
+    content: '', // 累积的文本内容
+    reasoning_content: '', // 累积的推理内容
+    error: null, // 错误信息
+    conversationId: null, // 对话 ID
+    chatId: null, // Chat ID
+    botId: null, // 机器人 ID
+    chatStatus: null, // 会话状态
+    usage: null, // 使用情况
+    isStreamFinished: false, // 流是否结束
+    isAccumulateMessage: true, // 是否累加消息
+    follow_up: [], // 追问建议
+    consume_num: 0 // 消耗的算力积分数量
+};
+CozeClient.empty_response = {
+    code: 0,
+    msg: 'success',
+    data: null
+};
+CozeClient.empty_promise = () => new Promise(resolve => resolve(CozeClient.empty_response));
+CozeClient.consume_map = {
+    '-1': 0,
+    '9': 1,
+    '10': 6,
+    '11': 30
+};
+export default CozeClient;

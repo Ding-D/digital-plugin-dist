@@ -1,6 +1,6 @@
 export declare namespace CozeClient {
     type UrlType = 'bot.chat' | 'workflow.run' | 'workflow.stream_run';
-    type Platform = 'Uniapp';
+    type Platform = 'Web' | 'MP';
     interface UrlConfig {
         bot: {
             chat: string;
@@ -27,10 +27,10 @@ export declare namespace CozeClient {
     }
     type RequestClient = Promise<any> | null;
     interface RequestConfig {
-        postConsume: (params: {
+        postConsume?: (params: {
             type: number;
         }) => Promise<any>;
-        getToken: () => Promise<any>;
+        getToken?: () => Promise<any>;
     }
     interface RequestHandlers {
         postConsume: (fn: (params: {
@@ -39,7 +39,9 @@ export declare namespace CozeClient {
         getToken: (fn: () => Promise<any>) => void;
     }
     interface InitOptions {
-        cozeToken?: string;
+        appid: string;
+        secret_key: string;
+        token?: string;
         urlType?: UrlType;
         platform?: Platform;
         requestClient?: RequestClient;
@@ -61,6 +63,7 @@ export declare namespace CozeClient {
     interface SendMessageOptions {
         body?: any;
         params?: Record<string, any>;
+        header?: Record<string, string>;
         callback?: (data: CallbackData) => void;
         clientOptions?: ClientOptions;
     }

@@ -1,1 +1,101 @@
-function a9_0x8ebc(){const _0x24247e=['374873kHujta','6756720mSzDOU','forEach','6RCficW','1363940rUOKJV','852691jYnymr','6678116QzllcV','48624BaecNW','decode','push','encode','split','54CgFIyU','set','isFinite','isArray','object','isNumber','670088fhhfrC','join','startsWith','102txKCpi','string'];a9_0x8ebc=function(){return _0x24247e;};return a9_0x8ebc();}(function(_0x2467f7,_0x5a1334){const _0x32c059=a9_0x43c5,_0x34ceba=_0x2467f7();while(!![]){try{const _0x1a7b71=-parseInt(_0x32c059(0xb7))/0x1+parseInt(_0x32c059(0xbe))/0x2*(parseInt(_0x32c059(0xb5))/0x3)+-parseInt(_0x32c059(0xbd))/0x4+parseInt(_0x32c059(0xb8))/0x5+-parseInt(_0x32c059(0xba))/0x6*(-parseInt(_0x32c059(0xbc))/0x7)+-parseInt(_0x32c059(0xb2))/0x8+parseInt(_0x32c059(0xac))/0x9*(parseInt(_0x32c059(0xbb))/0xa);if(_0x1a7b71===_0x5a1334)break;else _0x34ceba['push'](_0x34ceba['shift']());}catch(_0x42e475){_0x34ceba['push'](_0x34ceba['shift']());}}}(a9_0x8ebc,0xf1b0e));import a9_0x514916 from'lodash.clonedeep';function a9_0x43c5(_0x10ae20,_0x52d757){const _0x8ebccb=a9_0x8ebc();return a9_0x43c5=function(_0x43c5d7,_0x42d51a){_0x43c5d7=_0x43c5d7-0xac;let _0x1e8f51=_0x8ebccb[_0x43c5d7];return _0x1e8f51;},a9_0x43c5(_0x10ae20,_0x52d757);}import a9_0x112a0f from'./miniprogram-text-decoder.js';import a9_0x17b372 from'./miniprogram-text-encoder.js';import a9_0x27f183 from'./coze';const utils={'cozeUtil':a9_0x27f183,'TextEncoder'(_0x7d7b4b){const _0x1daa4d=a9_0x43c5;return new a9_0x17b372()[_0x1daa4d(0xc1)](_0x7d7b4b);},'TextDecoder'(_0x4515a9){const _0x4be10b=a9_0x43c5;return new a9_0x112a0f()[_0x4be10b(0xbf)](_0x4515a9);},'deepClone'(_0x31ab03){return a9_0x514916(_0x31ab03);},'isEmpty':function(_0x46f784){const _0x5b6c37=a9_0x43c5;if(utils[_0x5b6c37(0xb1)](_0x46f784))return![];return _0x46f784===''||_0x46f784===undefined||_0x46f784===null?!![]:![];},'isNumber'(_0x5a6d65){const _0x54f573=a9_0x43c5;return Number[_0x54f573(0xae)](_0x5a6d65);},'URLSearchParams'(_0x5ecb0d=''){const _0x5980f7=a9_0x43c5;let _0x786e0a=new Map();if(typeof _0x5ecb0d===_0x5980f7(0xb6)){const _0x357ba3=_0x5ecb0d[_0x5980f7(0xb4)]('?')?_0x5ecb0d['slice'](0x1):_0x5ecb0d;_0x357ba3&&_0x357ba3[_0x5980f7(0xc2)]('&')[_0x5980f7(0xb9)](_0x49e0ac=>{const _0x4fee60=_0x5980f7,[_0x764b16,_0x12378e='']=_0x49e0ac[_0x4fee60(0xc2)]('=');if(_0x764b16){const _0x47e291=decodeURIComponent(_0x764b16),_0x13cdf1=decodeURIComponent(_0x12378e);if(_0x786e0a['has'](_0x47e291)){const _0x367254=_0x786e0a['get'](_0x47e291);Array[_0x4fee60(0xaf)](_0x367254)?_0x367254[_0x4fee60(0xc0)](_0x13cdf1):_0x786e0a[_0x4fee60(0xad)](_0x47e291,[_0x367254,_0x13cdf1]);}else _0x786e0a[_0x4fee60(0xad)](_0x47e291,_0x13cdf1);}});}else{if(_0x5ecb0d&&Array['isArray'](_0x5ecb0d))_0x5ecb0d[_0x5980f7(0xb9)]((_0x31e04a,_0x4f692a)=>{const _0x49fc09=_0x5980f7;_0x786e0a[_0x49fc09(0xad)](_0x4f692a,_0x31e04a);});else _0x5ecb0d&&typeof _0x5ecb0d===_0x5980f7(0xb0)&&(_0x5ecb0d instanceof Map?_0x786e0a=new Map(_0x5ecb0d):Object['keys'](_0x5ecb0d)[_0x5980f7(0xb9)](_0x30a47b=>{const _0x598b78=_0x5980f7,_0xb2f31d=_0x5ecb0d[_0x30a47b];Array[_0x598b78(0xaf)](_0xb2f31d)?_0x786e0a[_0x598b78(0xad)](_0x30a47b,_0xb2f31d):_0x786e0a['set'](_0x30a47b,String(_0xb2f31d));}));}return{'toString'(){const _0x4be74f=_0x5980f7,_0x20d5a0=[];for(const [_0x14740c,_0x37b2b7]of _0x786e0a){Array[_0x4be74f(0xaf)](_0x37b2b7)?_0x37b2b7[_0x4be74f(0xb9)](_0x47a6b5=>{const _0x522c58=_0x4be74f;_0x20d5a0[_0x522c58(0xc0)](encodeURIComponent(_0x14740c)+'='+encodeURIComponent(_0x47a6b5));}):_0x20d5a0[_0x4be74f(0xc0)](encodeURIComponent(_0x14740c)+'='+encodeURIComponent(_0x37b2b7));}return _0x20d5a0[_0x4be74f(0xb3)]('&');}};}};export default utils;
+import cloneDeep from 'lodash.clonedeep';
+import TextDecoderPolyfill from './miniprogram-text-decoder.js';
+import TextEncoderPolyfill from './miniprogram-text-encoder.js';
+import cozeUtil from './coze';
+const utils = {
+    cozeUtil,
+    TextEncoder(val) {
+        return new TextEncoderPolyfill().encode(val);
+    },
+    TextDecoder(val) {
+        return new TextDecoderPolyfill().decode(val);
+    },
+    deepClone(val) {
+        return cloneDeep(val);
+    },
+    isEmpty: function (val) {
+        if (utils.isNumber(val))
+            return false;
+        if (val === '' || val === undefined || val === null) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    },
+    isNumber(val) {
+        return Number.isFinite(val);
+    },
+    URLSearchParams(init = '') {
+        let params = new Map();
+        // 初始化处理
+        if (typeof init === 'string') {
+            // 去掉开头的问号
+            const searchString = init.startsWith('?') ? init.slice(1) : init;
+            if (searchString) {
+                searchString.split('&').forEach(pair => {
+                    const [key, value = ''] = pair.split('=');
+                    if (key) {
+                        const decodedKey = decodeURIComponent(key);
+                        const decodedValue = decodeURIComponent(value);
+                        if (params.has(decodedKey)) {
+                            // 如果键已存在，转换为数组或添加到数组
+                            const existing = params.get(decodedKey);
+                            if (Array.isArray(existing)) {
+                                existing.push(decodedValue);
+                            }
+                            else {
+                                params.set(decodedKey, [existing, decodedValue]);
+                            }
+                        }
+                        else {
+                            params.set(decodedKey, decodedValue);
+                        }
+                    }
+                });
+            }
+        }
+        else if (init && Array.isArray(init)) {
+            // URLSearchParams或类似对象
+            init.forEach((value, key) => {
+                params.set(key, value);
+            });
+        }
+        else if (init && typeof init === 'object') {
+            // 处理对象或URLSearchParams实例
+            if (init instanceof Map) {
+                params = new Map(init);
+            }
+            else {
+                // 普通对象
+                Object.keys(init).forEach(key => {
+                    const value = init[key];
+                    if (Array.isArray(value)) {
+                        params.set(key, value);
+                    }
+                    else {
+                        params.set(key, String(value));
+                    }
+                });
+            }
+        }
+        return {
+            // 返回查询字符串
+            toString() {
+                const pairs = [];
+                for (const [key, value] of params) {
+                    if (Array.isArray(value)) {
+                        value.forEach(val => {
+                            pairs.push(`${encodeURIComponent(key)}=${encodeURIComponent(val)}`);
+                        });
+                    }
+                    else {
+                        pairs.push(`${encodeURIComponent(key)}=${encodeURIComponent(value)}`);
+                    }
+                }
+                return pairs.join('&');
+            }
+        };
+    }
+};
+export default utils;

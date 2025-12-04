@@ -1,1 +1,251 @@
-function a0_0x47c6(_0x54d4df,_0x45e5f0){const _0x5234d8=a0_0x5234();return a0_0x47c6=function(_0x47c653,_0x32cff5){_0x47c653=_0x47c653-0x139;let _0x25de1f=_0x5234d8[_0x47c653];return _0x25de1f;},a0_0x47c6(_0x54d4df,_0x45e5f0);}const a0_0xa57650=a0_0x47c6;function a0_0x5234(){const _0x2f2a6b=['keys','type','error','href','save_video','action_key\x20to\x20method,\x20is\x20not\x20a\x20function','run_workflow_end_task','data-split_task_limit','3070564OPUPtq','$util.toast','getTargetAction','checkIsActionValue','run_bot_end_task','data-toast_title','data-text','findIndex','4139559kTqhCC','setClipboardData','data-next_task_key','checkIsActionKey','ACTION_KEY','join','find','create_subscribe','call','5811205weWdVu','ACTIONS','4099200JbgQeg','show_login_popup','handleOptions','sendMessage','indexOf','to_copywriting','1714374AityvN','data-content','ACTIONS_MAP_KEY_LIST','继续任务','options','show_toast','length','data-url','287aPxhfM','813168FUpAxR','保存视频','跳转页面','918744MwxnCA','copy_text','vue','ACTIONS_MAP_VALUE_LIST','shift','cozeUtil','showToast','uni','runAction','innerText','ACTIONS_MAP','deepClone','run_bot_next_task','开始工作','return_additional_messages','订阅制作','action_key','split','save_photo','发送消息','前往智能成片'];a0_0x5234=function(){return _0x2f2a6b;};return a0_0x5234();}(function(_0x53e3f0,_0x492bc3){const _0x121a29=a0_0x47c6,_0x44931d=_0x53e3f0();while(!![]){try{const _0xeeb4f9=-parseInt(_0x121a29(0x14e))/0x1+parseInt(_0x121a29(0x157))/0x2+-parseInt(_0x121a29(0x13d))/0x3+parseInt(_0x121a29(0x177))/0x4+-parseInt(_0x121a29(0x146))/0x5+-parseInt(_0x121a29(0x148))/0x6+parseInt(_0x121a29(0x156))/0x7*(parseInt(_0x121a29(0x15a))/0x8);if(_0xeeb4f9===_0x492bc3)break;else _0x44931d['push'](_0x44931d['shift']());}catch(_0x5c0ca5){_0x44931d['push'](_0x44931d['shift']());}}}(a0_0x5234,0xe6410));import a0_0x32904c from'../utils';class ActionClient{constructor(){}static[a0_0xa57650(0x140)](_0x4ce3b8){const _0x21c23d=a0_0xa57650,_0x22f500=new RegExp('('+ActionClient[_0x21c23d(0x150)][_0x21c23d(0x142)]('|')+')');return _0x22f500['test'](_0x4ce3b8);}static[a0_0xa57650(0x17a)](_0x3180a3){const _0x22479a=a0_0xa57650;return!!ActionClient['ACTIONS_MAP_VALUE_LIST'][_0x22479a(0x143)](_0x528f10=>_0x528f10['indexOf'](_0x3180a3)!==-0x1||_0x3180a3['indexOf'](_0x528f10)!==-0x1);}static[a0_0xa57650(0x179)](_0x5bef57,_0x2d9b87){const _0x41589f=a0_0xa57650;if(_0x5bef57)return a0_0x32904c['deepClone'](ActionClient['ACTIONS'][_0x5bef57]);const _0x6068a1=ActionClient[_0x41589f(0x17a)](_0x2d9b87);if(_0x6068a1){const _0x2088bb=ActionClient[_0x41589f(0x150)][ActionClient[_0x41589f(0x15d)][_0x41589f(0x13c)](_0x3b3cdd=>_0x3b3cdd[_0x41589f(0x14c)](_0x2d9b87)!==-0x1||_0x2d9b87[_0x41589f(0x14c)](_0x3b3cdd)!==-0x1)];return a0_0x32904c[_0x41589f(0x165)](ActionClient[_0x41589f(0x147)][_0x2088bb]);}const _0x3f146f=this[_0x41589f(0x140)](_0x2d9b87);if(_0x3f146f)return a0_0x32904c[_0x41589f(0x165)](ActionClient[_0x41589f(0x147)][_0x2d9b87]);return![];}[a0_0xa57650(0x162)](_0x1e4f3c){const _0x3e89fa=a0_0xa57650,_0x22d5b9=_0x1e4f3c[_0x3e89fa(0x163)],_0x9fba0f=_0x1e4f3c[ActionClient[_0x3e89fa(0x141)]],_0x12e265=ActionClient[_0x3e89fa(0x179)](_0x9fba0f,_0x22d5b9);if(_0x12e265){const _0x278e0e={'uni':_0x36da1a=>{const _0x17d258=_0x3e89fa,{command:_0x4892ee,options:_0x1b295e}=_0x36da1a;uni[_0x4892ee](_0x36da1a[_0x17d258(0x14a)]?_0x36da1a[_0x17d258(0x14a)](_0x1e4f3c):_0x1b295e);},'vue':_0x5ddfa8=>{const _0x3ec2cb=_0x3e89fa,{command:_0x47fe06,options:_0x54aa84}=_0x5ddfa8;let _0x51efc5=this;const _0x5d1ea3=_0x5c1833=>{const _0x2de74a=a0_0x47c6,_0x26ac7f=_0x5c1833[_0x2de74a(0x16b)]('.'),_0x2f6eba=_0x26ac7f[_0x2de74a(0x15e)]();_0x51efc5=_0x51efc5[_0x2f6eba],_0x26ac7f[_0x2de74a(0x154)]&&_0x5d1ea3(_0x26ac7f['join']('.'));};_0x5d1ea3(_0x47fe06),typeof _0x51efc5==='function'?_0x51efc5(_0x5ddfa8[_0x3ec2cb(0x14a)]?_0x5ddfa8[_0x3ec2cb(0x14a)](_0x1e4f3c):_0x54aa84):console[_0x3ec2cb(0x171)](_0x3ec2cb(0x174),_0x54aa84);}},_0x36bd02=_0x12e265[_0x3e89fa(0x170)];_0x278e0e[_0x36bd02]&&_0x278e0e[_0x36bd02][_0x3e89fa(0x145)](this,_0x12e265);}}}ActionClient[a0_0xa57650(0x141)]=a0_0xa57650(0x16a),ActionClient[a0_0xa57650(0x164)]={'copy_text':'复制文本','turn_to':a0_0xa57650(0x159),'to_copywriting':a0_0xa57650(0x16e),'send_message':a0_0xa57650(0x16d),'save_video':a0_0xa57650(0x158),'save_photo':a0_0xa57650(0x158),'run_bot_next_task':a0_0xa57650(0x151),'run_bot_end_task':a0_0xa57650(0x167),'run_workflow_end_task':a0_0xa57650(0x167),'show_toast':'显示提示','show_login_popup':'登录','create_subscribe':a0_0xa57650(0x169),'navigate_to':'跳转页面'},ActionClient[a0_0xa57650(0x150)]=Object[a0_0xa57650(0x16f)](ActionClient[a0_0xa57650(0x164)]),ActionClient[a0_0xa57650(0x15d)]=Object['values'](ActionClient[a0_0xa57650(0x164)]),ActionClient[a0_0xa57650(0x147)]={'copy_text':{'name':ActionClient[a0_0xa57650(0x164)][a0_0xa57650(0x15b)],'type':a0_0xa57650(0x161),'command':a0_0xa57650(0x13e),'attrs':[a0_0xa57650(0x13b),a0_0xa57650(0x13a)],'handleOptions'(_0x1caa88){const _0x46d3de=a0_0xa57650;return{'data':_0x1caa88[_0x46d3de(0x13b)],'success':()=>_0x1caa88[_0x46d3de(0x13a)]&&uni[_0x46d3de(0x160)]({'title':_0x1caa88[_0x46d3de(0x13a)]})};}},'to_copywriting':{'name':ActionClient[a0_0xa57650(0x164)][a0_0xa57650(0x14d)],'type':'uni','command':'navigateTo','attrs':[a0_0xa57650(0x155)],'options':{'url':'/pages_dcenter/freeCreation/creations/copywriting'}},'turn_to':{'name':ActionClient[a0_0xa57650(0x164)]['turn_to'],'type':a0_0xa57650(0x161),'command':'navigateTo','attrs':[a0_0xa57650(0x155)],'handleOptions'(_0x1ffda0){const _0x242f52=a0_0xa57650;return{'url':_0x1ffda0[_0x242f52(0x155)]};}},'save_video':{'name':ActionClient[a0_0xa57650(0x164)][a0_0xa57650(0x173)],'type':a0_0xa57650(0x15c),'command':a0_0xa57650(0x173),'attrs':['href'],'options':{},'handleOptions'(_0x3b1739){const _0x1204a3=a0_0xa57650;return{'filePath':_0x3b1739[_0x1204a3(0x172)],'saveMediaToPhotosAlbumOptions':ActionClient[_0x1204a3(0x147)]['save_video']['options']};}},'save_photo':{'name':ActionClient[a0_0xa57650(0x164)][a0_0xa57650(0x16c)],'type':a0_0xa57650(0x15c),'command':a0_0xa57650(0x16c),'attrs':[a0_0xa57650(0x172)],'options':{},'handleOptions'(_0x42818e){const _0x213796=a0_0xa57650;return{'filePath':_0x42818e[_0x213796(0x172)],'saveMediaToPhotosAlbumOptions':ActionClient['ACTIONS'][_0x213796(0x16c)][_0x213796(0x152)]};}},'send_message':{'name':ActionClient['ACTIONS_MAP']['send_message'],'type':a0_0xa57650(0x15c),'command':a0_0xa57650(0x14b),'attrs':['data-content'],'handleOptions'(_0x1131ee){const _0x333c2e=a0_0xa57650;return a0_0x32904c[_0x333c2e(0x15f)][_0x333c2e(0x168)](_0x1131ee[_0x333c2e(0x14f)]);}},'run_bot_next_task':{'name':ActionClient[a0_0xa57650(0x164)][a0_0xa57650(0x166)],'type':a0_0xa57650(0x15c),'command':a0_0xa57650(0x166),'attrs':[a0_0xa57650(0x13f),'data-user_content'],'handleOptions'(_0x118e69){return{'next_task_key':_0x118e69['data-next_task_key'],'user_content':_0x118e69['data-user_content']};}},'run_bot_end_task':{'name':ActionClient['ACTIONS_MAP']['run_bot_end_task'],'type':'vue','command':a0_0xa57650(0x139),'attrs':[a0_0xa57650(0x176)],'handleOptions'(_0x4e3aae){let _0x4f7725=Number(_0x4e3aae['data-split_task_limit']);return isNaN(_0x4f7725)&&(_0x4f7725=0x0),{'split_task_limit':_0x4f7725};}},'run_workflow_end_task':{'name':ActionClient[a0_0xa57650(0x164)][a0_0xa57650(0x175)],'type':a0_0xa57650(0x15c),'command':a0_0xa57650(0x175),'attrs':['data-split_task_limit'],'handleOptions'(_0x560d23){const _0x2736f3=a0_0xa57650;let _0x1c305f=Number(_0x560d23[_0x2736f3(0x176)]);return isNaN(_0x1c305f)&&(_0x1c305f=0x0),{'split_task_limit':_0x1c305f};}},'show_toast':{'name':ActionClient[a0_0xa57650(0x164)][a0_0xa57650(0x153)],'type':a0_0xa57650(0x15c),'command':a0_0xa57650(0x178),'attrs':['data-content'],'handleOptions'(_0x5a66dc){const _0xcd69ef=a0_0xa57650;return{'content':_0x5a66dc[_0xcd69ef(0x14f)]};}},'show_login_popup':{'name':ActionClient['ACTIONS_MAP'][a0_0xa57650(0x149)],'type':a0_0xa57650(0x15c),'command':a0_0xa57650(0x149),'attrs':[],'options':{}},'create_subscribe':{'name':ActionClient['ACTIONS_MAP'][a0_0xa57650(0x144)],'type':a0_0xa57650(0x15c),'command':a0_0xa57650(0x144),'attrs':['data-split_task_limit'],'handleOptions'(_0x1bfc94){const _0x551c49=a0_0xa57650;return{'split_task_limit':_0x1bfc94[_0x551c49(0x176)]};}}};export default ActionClient;
+import util from '../utils';
+class ActionClient {
+    constructor() { }
+    static checkIsActionKey(key) {
+        const reg = new RegExp(`(${ActionClient.ACTIONS_MAP_KEY_LIST.join('|')})`);
+        return reg.test(key);
+    }
+    static checkIsActionValue(value) {
+        return !!ActionClient.ACTIONS_MAP_VALUE_LIST.find(item => item.indexOf(value) !== -1 || value.indexOf(item) !== -1);
+    }
+    static getTargetAction(key, val) {
+        if (key)
+            return util.deepClone(ActionClient.ACTIONS[key]);
+        const isValue = ActionClient.checkIsActionValue(val);
+        if (isValue) {
+            const actionsKey = ActionClient.ACTIONS_MAP_KEY_LIST[ActionClient.ACTIONS_MAP_VALUE_LIST.findIndex(item => item.indexOf(val) !== -1 || val.indexOf(item) !== -1)];
+            return util.deepClone(ActionClient.ACTIONS[actionsKey]);
+        }
+        const isKey = this.checkIsActionKey(val);
+        if (isKey) {
+            return util.deepClone(ActionClient.ACTIONS[val]);
+        }
+        return false;
+    }
+    runAction(linkEvent) {
+        const val = linkEvent.innerText;
+        const key = linkEvent[ActionClient.ACTION_KEY];
+        const action = ActionClient.getTargetAction(key, val);
+        if (action) {
+            const actionTypeMap = {
+                // 固定函数写法, 解决this指向问题
+                uni: (action) => {
+                    const { command, options } = action;
+                    uni[command](action.handleOptions ? action.handleOptions(linkEvent) : options);
+                },
+                vue: (action) => {
+                    const { command, options } = action;
+                    let api = this;
+                    const loopCommand = (commands) => {
+                        const list = commands.split('.');
+                        const first_command = list.shift();
+                        api = api[first_command];
+                        if (list.length) {
+                            loopCommand(list.join('.'));
+                        }
+                    };
+                    loopCommand(command);
+                    if (typeof api === 'function') {
+                        api(action.handleOptions ? action.handleOptions(linkEvent) : options);
+                    }
+                    else {
+                        console.error('action_key to method, is not a function', options);
+                    }
+                }
+            };
+            const actionType = action.type;
+            if (actionTypeMap[actionType]) {
+                actionTypeMap[actionType].call(this, action);
+            }
+        }
+    }
+}
+ActionClient.ACTION_KEY = 'action_key'; // 行为key
+// 增加action后，需要执行下面几步
+// 1. 在actionsMap中添加key和value
+// 2. 在actions中添加key和value
+// 3. 在ActionMpHtml中增加method
+ActionClient.ACTIONS_MAP = {
+    copy_text: '复制文本',
+    turn_to: '跳转页面',
+    to_copywriting: '前往智能成片',
+    send_message: '发送消息',
+    save_video: '保存视频',
+    save_photo: '保存视频',
+    run_bot_next_task: '继续任务',
+    run_bot_end_task: '开始工作',
+    run_workflow_end_task: '开始工作',
+    show_toast: '显示提示',
+    show_login_popup: '登录',
+    create_subscribe: '订阅制作',
+    navigate_to: '跳转页面'
+};
+ActionClient.ACTIONS_MAP_KEY_LIST = Object.keys(ActionClient.ACTIONS_MAP);
+ActionClient.ACTIONS_MAP_VALUE_LIST = Object.values(ActionClient.ACTIONS_MAP);
+/**
+ * 行为映射
+ *
+ * @key name: 行为名称
+ * @key type: 行为类型 uni: uni-app内置行为 vue: vue行为
+ * @key command: 行为事件
+ * @key attrs: 行为所需参数
+ * @key options: 行为事件触发时，传递的参数
+ * @key handleOptions: 动态获取行为事件触发时，传递的参数
+ */
+ActionClient.ACTIONS = {
+    copy_text: {
+        name: ActionClient.ACTIONS_MAP.copy_text,
+        type: 'uni',
+        command: 'setClipboardData',
+        attrs: ['data-text', 'data-toast_title'],
+        handleOptions(linkEvent) {
+            return {
+                data: linkEvent['data-text'],
+                success: () => linkEvent['data-toast_title'] &&
+                    uni.showToast({
+                        title: linkEvent['data-toast_title']
+                    })
+            };
+        }
+    },
+    to_copywriting: {
+        name: ActionClient.ACTIONS_MAP.to_copywriting,
+        type: 'uni',
+        command: 'navigateTo',
+        attrs: ['data-url'],
+        options: {
+            // 调用uni 或者 ActionMpHtml组件中方法时的参数
+            url: '/pages_dcenter/freeCreation/creations/copywriting'
+        }
+    },
+    turn_to: {
+        name: ActionClient.ACTIONS_MAP.turn_to,
+        type: 'uni',
+        command: 'navigateTo',
+        attrs: ['data-url'],
+        handleOptions(linkEvent) {
+            return {
+                url: linkEvent['data-url']
+            };
+        }
+    },
+    save_video: {
+        name: ActionClient.ACTIONS_MAP.save_video,
+        // nameReg: /保存视频:(\S+)/,
+        type: 'vue',
+        command: 'save_video',
+        attrs: ['href'],
+        options: {},
+        // 调用uni 或者 ActionMpHtml组件中方法 或者 $util中方法 时的传递的参数
+        // 此方法有更高的自由度，如果有了handleOptions,则优先使用handleOptions返回的对象
+        // 此时options就无需定义
+        handleOptions(linkEvent) {
+            return {
+                filePath: linkEvent.href,
+                saveMediaToPhotosAlbumOptions: ActionClient.ACTIONS.save_video.options
+            };
+        }
+    },
+    save_photo: {
+        name: ActionClient.ACTIONS_MAP.save_photo,
+        // nameReg: /保存视频:(\S+)/,
+        type: 'vue',
+        command: 'save_photo',
+        attrs: ['href'],
+        options: {},
+        // 调用uni 或者 ActionMpHtml组件中方法 或者 $util中方法 时的传递的参数
+        // 此方法有更高的自由度，如果有了handleOptions,则优先使用handleOptions返回的对象
+        // 此时options就无需定义
+        handleOptions(linkEvent) {
+            return {
+                filePath: linkEvent.href,
+                saveMediaToPhotosAlbumOptions: ActionClient.ACTIONS.save_photo.options
+            };
+        }
+    },
+    send_message: {
+        name: ActionClient.ACTIONS_MAP.send_message,
+        type: 'vue',
+        command: 'sendMessage',
+        attrs: ['data-content'],
+        handleOptions(linkEvent) {
+            return util.cozeUtil.return_additional_messages(linkEvent['data-content']);
+        }
+    },
+    run_bot_next_task: {
+        name: ActionClient.ACTIONS_MAP.run_bot_next_task,
+        type: 'vue',
+        command: 'run_bot_next_task',
+        attrs: ['data-next_task_key', 'data-user_content'],
+        handleOptions(linkEvent) {
+            return {
+                next_task_key: linkEvent['data-next_task_key'],
+                user_content: linkEvent['data-user_content']
+            };
+        }
+    },
+    run_bot_end_task: {
+        name: ActionClient.ACTIONS_MAP.run_bot_end_task,
+        type: 'vue',
+        command: 'run_bot_end_task',
+        attrs: ['data-split_task_limit'],
+        handleOptions(linkEvent) {
+            let split_task_limit = Number(linkEvent['data-split_task_limit']);
+            if (isNaN(split_task_limit)) {
+                split_task_limit = 0;
+            }
+            return {
+                // 向上截取任务限制， 用于获取（向上获取role为assistant的message）message_list中task下的dom_list
+                // 类型：number
+                split_task_limit
+            };
+        }
+    },
+    run_workflow_end_task: {
+        name: ActionClient.ACTIONS_MAP.run_workflow_end_task,
+        type: 'vue',
+        command: 'run_workflow_end_task',
+        attrs: ['data-split_task_limit'],
+        handleOptions(linkEvent) {
+            let split_task_limit = Number(linkEvent['data-split_task_limit']);
+            if (isNaN(split_task_limit)) {
+                split_task_limit = 0;
+            }
+            return {
+                // 向上截取任务限制， 用于获取（向上获取role为assistant的message）message_list中task下的dom_list
+                // 类型：number
+                split_task_limit
+            };
+        }
+    },
+    show_toast: {
+        name: ActionClient.ACTIONS_MAP.show_toast,
+        type: 'vue',
+        command: '$util.toast',
+        attrs: ['data-content'],
+        handleOptions(linkEvent) {
+            return {
+                content: linkEvent['data-content']
+            };
+        }
+    },
+    show_login_popup: {
+        name: ActionClient.ACTIONS_MAP.show_login_popup,
+        type: 'vue',
+        command: 'show_login_popup',
+        attrs: [],
+        options: {}
+    },
+    create_subscribe: {
+        name: ActionClient.ACTIONS_MAP.create_subscribe,
+        type: 'vue',
+        command: 'create_subscribe',
+        attrs: ['data-split_task_limit'],
+        handleOptions(linkEvent) {
+            return {
+                split_task_limit: linkEvent['data-split_task_limit']
+            };
+        }
+    }
+};
+export default ActionClient;

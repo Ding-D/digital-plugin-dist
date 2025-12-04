@@ -1,1 +1,51 @@
-(function(_0x30cd65,_0x265277){const _0x4b9842=a8_0x34b5,_0x479d4d=_0x30cd65();while(!![]){try{const _0x50bdb5=-parseInt(_0x4b9842(0x1af))/0x1*(-parseInt(_0x4b9842(0x1bc))/0x2)+-parseInt(_0x4b9842(0x1c1))/0x3*(parseInt(_0x4b9842(0x1bb))/0x4)+parseInt(_0x4b9842(0x1be))/0x5*(parseInt(_0x4b9842(0x1ba))/0x6)+parseInt(_0x4b9842(0x1ae))/0x7*(-parseInt(_0x4b9842(0x1b8))/0x8)+parseInt(_0x4b9842(0x1b9))/0x9*(parseInt(_0x4b9842(0x1b0))/0xa)+-parseInt(_0x4b9842(0x1b4))/0xb+parseInt(_0x4b9842(0x1bf))/0xc*(parseInt(_0x4b9842(0x1b6))/0xd);if(_0x50bdb5===_0x265277)break;else _0x479d4d['push'](_0x479d4d['shift']());}catch(_0x51b1c6){_0x479d4d['push'](_0x479d4d['shift']());}}}(a8_0x2ec9,0xa0e7d));function a8_0x34b5(_0x3531fa,_0x5bc84b){const _0x2ec927=a8_0x2ec9();return a8_0x34b5=function(_0x34b501,_0x2d44e8){_0x34b501=_0x34b501-0x1ae;let _0x4b591b=_0x2ec927[_0x34b501];return _0x4b591b;},a8_0x34b5(_0x3531fa,_0x5bc84b);}function a8_0x2ec9(){const _0x2a89ab=['65333bbCYsS','10zCrFbY','question','length','forEach','4119203eRrvxR','push','13kjpoFw','stringify','8zOtivs','5973930NSorva','6nmmWkv','8AOFcyZ','14EYuSex','user','198570NGTTJc','22879344tWrQkN','text','1703841ftbiME','6285937RgjaZI'];a8_0x2ec9=function(){return _0x2a89ab;};return a8_0x2ec9();}export default{'return_additional_messages'(_0xcb4e57,_0x1c7f6b=[]){const _0x80741e=a8_0x34b5,_0x4abd7a=[];if(!_0xcb4e57&&(!_0x1c7f6b||_0x1c7f6b[_0x80741e(0x1b2)]===0x0))return[];if(_0x1c7f6b&&_0x1c7f6b[_0x80741e(0x1b2)]>0x0){const _0x449ec9=[];_0xcb4e57&&_0x449ec9['push']({'type':_0x80741e(0x1c0),'text':_0xcb4e57}),_0x1c7f6b[_0x80741e(0x1b3)](_0x1d9fd0=>{_0x449ec9['push'](_0x1d9fd0);}),_0x4abd7a[_0x80741e(0x1b5)]({'role':_0x80741e(0x1bd),'content':JSON[_0x80741e(0x1b7)](_0x449ec9),'content_type':'object_string','type':_0x80741e(0x1b1)});}else _0xcb4e57&&_0x4abd7a[_0x80741e(0x1b5)]({'role':_0x80741e(0x1bd),'content':_0xcb4e57,'content_type':_0x80741e(0x1c0),'type':'question'});return _0x4abd7a;}};
+export default {
+    /**
+     * 根据 Coze API v3 规范，构造 additional_messages 数组。
+     *
+     * @param {string} input - 用户的文本输入。
+     * @param {Array<Object>} [fileList=[]] - 用户上传的文件列表。
+     *   每个对象应符合 Coze object_string object 的部分格式，例如 { type: 'image', file_id: 'xxx' } 或 { type: 'file', file_url: 'yyy' }。
+     * @returns {Array<Object>} - 准备好的 EnterMessage 对象数组，用于发送给 Coze API。
+     */
+    return_additional_messages(input, fileList = []) {
+        const messages = [];
+        // 如果没有输入，则返回空数组
+        if (!input && (!fileList || fileList.length === 0)) {
+            return [];
+        }
+        // 处理多模态消息：包含文本和文件
+        if (fileList && fileList.length > 0) {
+            const objectString = [];
+            // 添加文本部分
+            if (input) {
+                objectString.push({
+                    type: 'text',
+                    text: input
+                });
+            }
+            // 添加文件部分
+            fileList.forEach(file => {
+                // 假设 fileList 中的每个对象都已经是符合规范的 object_string object
+                objectString.push(file);
+            });
+            // 根据文档，如果 object_string 中有文本，则必须有文件，反之亦然（有一定限制）
+            // 这里我们假设调用者保证了数据的有效性
+            messages.push({
+                role: 'user',
+                content: JSON.stringify(objectString),
+                content_type: 'object_string',
+                type: 'question'
+            });
+        }
+        else if (input) {
+            // 处理纯文本消息
+            messages.push({
+                role: 'user',
+                content: input,
+                content_type: 'text',
+                type: 'question'
+            });
+        }
+        return messages;
+    }
+};
