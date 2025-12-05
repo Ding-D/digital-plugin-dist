@@ -184,8 +184,9 @@ declare class CozeClient {
     };
     streamUrlTypeMap: Record<string, boolean>;
     token: string;
-    conversation_id: string;
     tokenLoading: boolean;
+    conversation_id: string;
+    create_conversation_loading: boolean;
     is_consume: boolean;
     consume_id: number;
     consume_loading: boolean;
@@ -219,18 +220,13 @@ declare class CozeClient {
     botWebCallback(state: CozeClient.StreamState, parts: string[], callback: CozeClient.Callback): Promise<void>;
     workflowStreamCallback(state: CozeClient.StreamState, decode: string, callback: CozeClient.Callback): Promise<void>;
     check_workflow_is_success(response: CozeClient.UniResponse): boolean;
-    get_errorinfo(error: any): {
-        code: number;
-        message: string;
-        solution: string;
-        details: any;
-    };
+    get_errorinfo(error: any): CozeClient.ErrInfo;
     split_decode(decode: string): string[];
     /**
      * 事件类型检查
      * */
     get_part_type(part: string): string;
-    get_part_data(part: string): any;
+    get_part_data(part: string): CozeClient.CallbackData | null;
     chcek_is_stream_url(): boolean;
     set_token(token: string): void;
     get_content_filelist(fileList: CozeClient.ObjectString[]): {
