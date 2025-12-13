@@ -211,29 +211,6 @@ declare class TaskClient {
     };
     random_update_dom_value(dom: DomItem): DomItem;
     random_update_dom_list(dom_list: DomItem[]): DomItem[];
-    get_task(task_key: string): TaskTemplate[] | ((dom: DomItem) => DomItem) | ((dom_list: DomItem[]) => DomItem[]) | ((task_key: string) => TaskTemplate[] | ((dom: DomItem) => DomItem) | ((dom_list: DomItem[]) => DomItem[]) | /*elided*/ any | (() => {
-        name: string;
-        key: string;
-        task_status: string;
-        dom_list: never[];
-        ai_config: {
-            message_list: never[];
-        };
-        show_next_btn: boolean;
-        next_btn: string;
-        next_task_key: string;
-    }) | ((task: TaskTemplate | null, task_key: string, next_task: string) => void) | ((task: TaskTemplate | null, task_key: string) => TaskTemplate | null) | (() => TaskTemplate[]) | ((task_key?: string) => this) | (() => this) | ((task_key: string) => TaskTemplate | null) | ((task_key: string) => number) | (() => number) | (() => TaskTemplate) | ((idx: number, key: string, value: any) => void) | ((idx: number, task_option: Partial<TaskTemplate>) => this) | ((task_option: TaskTemplate) => this) | ((last_task_key: string) => TaskTemplate | null)) | (() => {
-        name: string;
-        key: string;
-        task_status: string;
-        dom_list: never[];
-        ai_config: {
-            message_list: never[];
-        };
-        show_next_btn: boolean;
-        next_btn: string;
-        next_task_key: string;
-    }) | ((task: TaskTemplate | null, task_key: string, next_task: string) => void) | ((task: TaskTemplate | null, task_key: string) => TaskTemplate | null) | (() => TaskTemplate[]) | ((task_key?: string) => this) | (() => this) | ((task_key: string) => TaskTemplate | null) | ((task_key: string) => number) | (() => number) | (() => TaskTemplate) | ((idx: number, key: string, value: any) => void) | ((idx: number, task_option: Partial<TaskTemplate>) => this) | ((task_option: TaskTemplate) => this) | ((last_task_key: string) => TaskTemplate | null);
     get_new_task(): {
         name: string;
         key: string;

@@ -41,6 +41,7 @@ export declare namespace CozeClient {
     interface InitOptions {
         appid: string;
         secret_key: string;
+        conversation_id?: string;
         token?: string;
         urlType?: UrlType;
         platform?: Platform;

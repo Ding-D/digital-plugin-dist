@@ -1,7 +1,7 @@
 {
   "name": "digital-worker",
   "description": "The JS config for the AI digital worker",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "author": "Ding_D <1601202253@qq.com>",
   "license": "MIT",
   "type": "module",

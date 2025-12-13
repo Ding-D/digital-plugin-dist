@@ -1,3 +1,4 @@
+import FrontendSecurity from '../utils/frontend-security';
 export interface ApiResponse<T = any> {
     code: number;
     msg: string;
@@ -12,8 +13,15 @@ export interface ErrorInfo {
 export interface CozeMessage {
     role: 'user' | 'assistant';
     content: string;
+    reasoning_content?: string;
     content_type: 'text' | 'object_string';
     type?: 'question' | 'answer';
+    follow_up?: string[];
+    task?: any;
+    is_show_reply_again?: boolean;
+    is_show_copy?: boolean;
+    is_show_consume?: boolean;
+    is_custom_message?: boolean;
 }
 export interface CozeFile {
     type: 'image' | 'file';
@@ -91,6 +99,7 @@ export interface DomItem {
 }
 export interface Utils {
     cozeUtil: CozeUtil;
+    frontendSecurity: FrontendSecurity;
     TextEncoder: (val: string) => Uint8Array;
     TextDecoder: (val: Uint8Array) => string;
     deepClone: <T>(val: T) => T;
@@ -112,7 +121,8 @@ declare global {
     const uni: any;
 }
 export interface CozeUtil {
-    return_additional_messages: (input: string, fileList?: CozeFile[]) => CozeMessage[];
+    generate_user_messages: (input: string, fileList?: CozeFile[]) => CozeMessage[];
+    generate_assistant_message: (content: string, reasoning_content: string) => CozeMessage;
 }
 export interface URLSearchParamsLike {
     toString: () => string;
