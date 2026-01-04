@@ -18,8 +18,13 @@ export default class ActionClient {
         handleOptions?: (linkEvent: any) => any;
     }>;
     constructor();
+    static conbineActionAttrs(attrs: string[], linkEvent: any): Record<string, string>;
+    static conbineActionLinkEvent(linkEvent: Record<string, string>): Record<string, string>;
     static checkIsActionKey(key: string): boolean;
     static checkIsActionValue(value: string): boolean;
     static getTargetAction(key: string | undefined, val: string): any;
-    runAction(linkEvent: any): void;
+    runAction(linkEvent: any): {
+        action_type: any;
+        options: any;
+    } | null;
 }

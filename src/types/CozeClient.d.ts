@@ -27,16 +27,8 @@ export declare namespace CozeClient {
     }
     type RequestClient = Promise<any> | null;
     interface RequestConfig {
-        postConsume?: (params: {
-            type: number;
-        }) => Promise<any>;
-        getToken?: () => Promise<any>;
     }
     interface RequestHandlers {
-        postConsume: (fn: (params: {
-            type: number;
-        }) => Promise<any>) => void;
-        getToken: (fn: () => Promise<any>) => void;
     }
     interface InitOptions {
         appid: string;
@@ -49,17 +41,9 @@ export declare namespace CozeClient {
         request?: RequestConfig;
         urlConfig?: Partial<UrlConfig>;
         token_callback?: (token: string | null) => void;
-        consume_id?: number;
-        is_consume?: boolean;
-    }
-    interface ConsumeOptions {
-        consume_id?: number;
-        is_consume?: boolean;
     }
     interface ClientOptions {
         urlType?: UrlType;
-        consume_id?: number;
-        is_consume?: boolean;
     }
     interface SendMessageOptions {
         body?: any;
@@ -89,6 +73,16 @@ export declare namespace CozeClient {
         body?: any;
         callback?: (data: any) => void;
     }
+    interface WorkflowStreamState {
+        node_seq_id: string;
+        node_title: `reasoning_content-${string}-${number}` | `content-${string}-${number}`;
+        node_type: 'Message';
+        node_execute_uuid: string;
+        node_is_finish: boolean;
+        content_type: 'text';
+        node_id: string;
+        content: string;
+    }
     interface StreamState {
         /**
          * 消息类型。
@@ -106,9 +100,8 @@ export declare namespace CozeClient {
          * 消息状态。
          *
          *@value  error: 接口返回的错误信息。
-         *@value  consume_end: 消费结束标志。
          */
-        stream_type: 'chat_created' | 'chat_in_progress' | 'chat_failed' | 'chat_completed' | 'message_delta' | 'message_follow_up' | 'message_completed' | 'done' | 'message' | 'consume_end' | 'complete' | 'custom_task' | 'error' | 'consume_end';
+        stream_type: 'chat_created' | 'chat_in_progress' | 'chat_failed' | 'chat_completed' | 'message_delta' | 'message_follow_up' | 'message_completed' | 'done' | 'message' | 'complete' | 'custom_task' | 'error';
         id: string;
         content: string;
         /**
@@ -134,12 +127,16 @@ export declare namespace CozeClient {
     }
     interface CallbackData extends StreamState {
         isFinished: boolean;
-        consume_num?: number;
         response?: any;
         errInfo?: ErrInfo;
         isAccumulateMessage?: boolean;
         follow_up?: string[];
         task?: any;
+        is_show_reply_again?: boolean;
+        is_show_copy?: boolean;
+        is_show_consume?: boolean;
+        is_consume?: boolean;
+        is_custom_message?: boolean;
     }
     interface ErrInfo {
         code: number;
@@ -196,7 +193,6 @@ export declare namespace CozeClient {
         reasoning_content?: string;
         follow_up?: string[];
         task?: any;
-        consume_num?: number;
     }
     interface ConversationOptions {
         header?: Record<string, string>;
@@ -220,9 +216,6 @@ export declare namespace CozeClient {
         solution: string;
         details?: any;
     }
-    interface ConsumeMap {
-        [key: string]: number;
-    }
     interface ErrorCodeMap {
         [code: number]: {
             message: string;
@@ -231,6 +224,5 @@ export declare namespace CozeClient {
     }
     type CallbackFunction = (data: any) => void;
     type TokenCallback = (token: string | null) => void;
-    type ConsumeCallback = (consumeNum: number) => void;
     type ConversationCallback = (conversationId: string) => void;
 }

@@ -21,6 +21,7 @@ export interface CozeMessage {
     is_show_reply_again?: boolean;
     is_show_copy?: boolean;
     is_show_consume?: boolean;
+    is_consume?: boolean;
     is_custom_message?: boolean;
 }
 export interface CozeFile {
@@ -72,8 +73,8 @@ export interface TaskTemplate {
     ai_config: {
         message_list: any[];
     };
-    show_next_btn: boolean;
-    next_btn: string;
+    show_action_btn: boolean;
+    action_btn: string;
     next_task_key: string;
     next_task?: string;
 }
@@ -92,10 +93,20 @@ export interface DomItem {
     is_need_edit?: boolean;
     maxlength?: number;
     select_type?: 'single' | 'multiple';
-    options?: any[];
+    options?: {
+        label: string;
+        value: any;
+    }[];
     value_list?: any[];
     input_type?: string;
     html?: string;
+}
+export interface PickerAndInputDomItem extends Pick<DomItem, 'value'> {
+    value?: {
+        value: any[];
+        selected_item: any[];
+        custom_input: string;
+    };
 }
 export interface Utils {
     cozeUtil: CozeUtil;
@@ -122,7 +133,7 @@ declare global {
 }
 export interface CozeUtil {
     generate_user_messages: (input: string, fileList?: CozeFile[]) => CozeMessage[];
-    generate_assistant_message: (content: string, reasoning_content: string) => CozeMessage;
+    generate_assistant_message: (content: string | CozeMessage, reasoning_content: string) => CozeMessage;
 }
 export interface URLSearchParamsLike {
     toString: () => string;

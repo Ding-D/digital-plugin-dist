@@ -149,10 +149,7 @@ declare class CozeClient {
     static empty_promise: () => Promise<ApiResponse<any>>;
     platform: CozeClient.Platform;
     request: CozeClient.RequestConfig;
-    requestHandleMap: {
-        postConsume: (p: any) => any;
-        getToken: (p: any) => any;
-    };
+    requestHandleMap: {};
     requestClient: CozeClient.RequestClient;
     appid: string;
     secret_key: string;
@@ -194,22 +191,12 @@ declare class CozeClient {
     create_conversation_loading: boolean;
     get_history_loading: boolean;
     get_conversation_history_loading: boolean;
-    is_consume: boolean;
-    consume_id: number;
-    consume_loading: boolean;
     private streamBuffer;
-    static consume_map: {
-        '-1': number;
-        '9': number;
-        '10': number;
-        '11': number;
-    };
     constructor(options: CozeClient.InitOptions);
     init(options: CozeClient.InitOptions): void;
     init_request(request: CozeClient.RequestConfig): void;
     init_url_config(urlConfig: Partial<CozeClient.UrlConfig>): void;
     init_url_type(urlType: CozeClient.UrlType): void;
-    init_consume(options: CozeClient.ConsumeOptions): void;
     init_client_options(options: CozeClient.ClientOptions): void;
     get_url(): string;
     sendMessage(options: CozeClient.SendMessageOptions): any;
@@ -223,18 +210,22 @@ declare class CozeClient {
     handleMPBotResponse(decode: string, callback: CozeClient.Callback): Promise<void>;
     handleMPWorkflowRunStreamResponse(decode: string, callback: CozeClient.Callback): Promise<void>;
     handleWorkflowRunResponse(response: CozeClient.UniResponse, callback: CozeClient.Callback): Promise<void>;
-    MPBotCallback(state: CozeClient.StreamState, decode: string, callback: CozeClient.Callback): Promise<void>;
+    MPBotCallback(origon_state: CozeClient.StreamState, decode: string, callback: CozeClient.Callback): Promise<CozeClient.CallbackData | undefined>;
     webBotCallback(state: CozeClient.StreamState, parts: string[], callback: CozeClient.Callback): CozeClient.CallbackData | null;
     workflowStreamCallback(state: CozeClient.StreamState, decode: string, callback: CozeClient.Callback): Promise<void>;
     check_workflow_is_success(response: CozeClient.UniResponse): boolean;
     get_errorinfo(error: any): CozeClient.ErrInfo;
     split_decode(decode: string): string[];
     /**
+     * 解码Unicode转义字符（如 \u003c -> <）
+     * */
+    decode_unicode_escape(str: string): string;
+    /**
      * 事件类型检查
      * */
     get_part_type(part: string): string;
     get_part_data(part: string): CozeClient.CallbackData | null;
-    chcek_is_stream_url(): boolean;
+    check_is_stream_url(): boolean;
     set_token(token: string): void;
     get_content_filelist(fileList: CozeClient.ObjectString[]): {
         content_type: string;
@@ -245,16 +236,14 @@ declare class CozeClient {
     split_body_extra(extra: Record<string, any>): {
         [x: string]: any;
     };
-    simulate_bot_reply(callback: CozeClient.Callback, origin_message: CozeClient.CallbackData, options: {
+    static simulate_bot_reply(callback: CozeClient.Callback, origin_message: CozeMessage, options: {
         reasoning_content_random?: number;
         content_radom?: number;
         time?: number;
     }): Promise<unknown>;
-    get_consume_num(consume_id?: number): number;
     static get_stream_state(): CozeClient.StreamState;
     convertHistoryToCallbackData(historyItems: ConversationHistoryItem[]): CozeClient.CallbackData[];
     callbackData2Messages(callbackData: CozeClient.CallbackData): CozeMessage | CozeMessage[] | null;
-    consumeIntegral(handleConsumeEnd: (data: number) => void): Promise<void>;
     getToken(): Promise<unknown>;
     createConversation(options: {
         header: any;
