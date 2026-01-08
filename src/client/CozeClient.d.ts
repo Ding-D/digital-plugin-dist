@@ -238,8 +238,9 @@ declare class CozeClient {
     };
     static simulate_bot_reply(callback: CozeClient.Callback, origin_message: CozeMessage, options: {
         reasoning_content_random?: number;
-        content_radom?: number;
+        content_random?: number;
         time?: number;
+        isFinished?: boolean;
     }): Promise<unknown>;
     static get_stream_state(): CozeClient.StreamState;
     convertHistoryToCallbackData(historyItems: ConversationHistoryItem[]): CozeClient.CallbackData[];
