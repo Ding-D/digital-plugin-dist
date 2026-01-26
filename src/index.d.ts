@@ -5,6 +5,9 @@ declare class DititalWorker {
     static ActionClient: typeof ActionClient;
     static CozeClient: typeof CozeClient;
     static TaskClient: typeof TaskClient;
+    static templates: {
+        shoppingCartTemplate: typeof import("./templates/shopping-cart-template");
+    };
     static utils: import("./types").Utils;
 }
 export default DititalWorker;
